@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(ressource/image1.jpg);
+    background-size: cover;
+} */
+
+/* NAVIGATION BAR */
+.navbar{
+    background-color: rgba(0, 0, 255, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 5;
+}
+.navbar #logo{
+    width: 200px;
+}
+.navbar .nav-links #calltoaction a{
+    color: black;
+    background-color: white;
+    padding: 8px 10px 8px 10px;
+    border-radius: 50px;
+}
+.navbar a{
+    color: white;
+}
+.navbar .nav-links ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+    margin: 0 10px;
+}
+
+/* .navbar .nav-links ul li.active{
+    color: red;
+} */
+.navbar .menu-hamburger{
+    top: 10px;
+    right: 20px;
+    position: absolute;
+    display: none;
+    width: 60px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+@media screen and (max-width:800px) {
+    .navbar{
+        padding: 0;
+    }
+    .navbar #logo{
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    .navbar .menu-hamburger{
+        display: block;
+    }
+    .nav-links{
+        top: 0;
+        left: 0;
+        /* display: none; */
+        /* background-color: rgba(255, 255, 255, 0.289); */
+        background-color: #2f2a8556;
+        backdrop-filter: blur(7px);
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-left: 0;
+    }
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar .nav-links ul li{
+        margin: 15px 0;
+        font-size: 1.2em;
+    }
+}
