@@ -18,6 +18,7 @@ import { PageQuizzResultatComponent } from './component/page-quizz-resultat/page
 import { PageQuizzComponent } from './component/page-quizz/page-quizz.component';
 import { PageConnexionComponent } from './component/page-connexion/page-connexion.component';
 import { PageContactComponent } from './component/page-contact/page-contact.component';
+import { FondFlouComponent } from './component/fond-flou/fond-flou.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { PageContactComponent } from './component/page-contact/page-contact.comp
     PageQuizzResultatComponent,
     PageQuizzComponent,
     PageConnexionComponent,
-    PageContactComponent
+    PageContactComponent,
+    FondFlouComponent
   ],
   imports: [
     BrowserModule,
