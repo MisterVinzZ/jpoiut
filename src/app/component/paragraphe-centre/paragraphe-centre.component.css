@@ -1,0 +1,15 @@
+.paragraphe-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff; 
+    padding: 10px; 
+    height: 75px; 
+  }
+  
+  .paragraphe-text {
+    color: #2F2A85; 
+    font-size: 20px;
+    margin: 0; 
+  }

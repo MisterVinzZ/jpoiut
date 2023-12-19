@@ -22,6 +22,7 @@ import { FondFlouComponent } from './component/fond-flou/fond-flou.component';
 import { ImageADroiteComponent } from './component/image-a-droite/image-a-droite.component';
 import { FondBleuFonceComponent } from './component/fond-bleu-fonce/fond-bleu-fonce.component';
 import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche.component';
+import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragraphe-centre.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,9 @@ import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche
     FondFlouComponent,
     ImageADroiteComponent,
     FondBleuFonceComponent,
-    ImageAGaucheComponent
+    ImageAGaucheComponent,
+    ParagrapheCentreComponent,
+
   ],
   imports: [
     BrowserModule,
