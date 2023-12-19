@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2F2A85; /* Fond bleu foncé - à remplacer par votre couleur */
+    color: #fff; /* Couleur du texte - à ajuster selon vos besoins */
+  }
+  
+  .image {
+    width: 40%;
+    height: 30%;
+    order: 1; /* Change l'ordre d'affichage, met l'image à gauche */
+    overflow: hidden; /* Empêche le dépassement du contenu hors du conteneur */
+  }
+  
+  .image img {
+    width: 100%; /* Assurez-vous que l'image occupe la largeur totale du conteneur */
+    height: 100%;
+    object-fit: cover; /* Ajuste la taille de l'image pour couvrir entièrement le conteneur */
+  }
+  .content {
+    padding: 20px; /* Ajoute un espace intérieur de 20 pixels */
+  }

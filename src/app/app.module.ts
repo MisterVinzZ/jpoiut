@@ -19,6 +19,9 @@ import { PageQuizzComponent } from './component/page-quizz/page-quizz.component'
 import { PageConnexionComponent } from './component/page-connexion/page-connexion.component';
 import { PageContactComponent } from './component/page-contact/page-contact.component';
 import { FondFlouComponent } from './component/fond-flou/fond-flou.component';
+import { ImageADroiteComponent } from './component/image-a-droite/image-a-droite.component';
+import { FondBleuFonceComponent } from './component/fond-bleu-fonce/fond-bleu-fonce.component';
+import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { FondFlouComponent } from './component/fond-flou/fond-flou.component';
     PageQuizzComponent,
     PageConnexionComponent,
     PageContactComponent,
-    FondFlouComponent
+    FondFlouComponent,
+    ImageADroiteComponent,
+    FondBleuFonceComponent,
+    ImageAGaucheComponent
   ],
   imports: [
     BrowserModule,

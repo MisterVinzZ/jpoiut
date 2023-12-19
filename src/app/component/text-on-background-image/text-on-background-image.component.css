@@ -8,9 +8,11 @@
 }
 
 .text-container h1 {
-  margin-bottom: 20px; /* Ajustez la marge selon vos besoins */
+  margin-bottom: 20px;
+  font-size: 40px;
 }
 
 .text-container p {
-  margin-top: 20px; /* Ajustez la marge selon vos besoins */
+  margin-top: 20px; 
+  font-size: 25px;
 }

@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #211F37; 
+  color: #fff; 
+  height: 55vh;
+}
+
+.image {
+  width: 80%;
+  order: 2; /* Change l'ordre d'affichage, met l'image à droite */
+  overflow: hidden; /* Empêche le dépassement du contenu hors du conteneur */
+}
+
+.image img {
+  width: 100%; /* Assurez-vous que l'image occupe la largeur totale du conteneur */
+  height: 100%;
+  object-fit: cover; /* Ajuste la taille de l'image pour couvrir entièrement le conteneur */
+}
+
+.content {
+    padding: 70px;
+    padding-top: 60px;
+}
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  }
+p {
+  margin-top: 50px; 
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: justify;
+  width: 80%;
+}
+
+.rectangle {
+  position: absolute;
+  width: 100px;
+  height: 8px;
+  background-color: #fff;
+  margin-left: 30px; margin-bottom: 20px; 
+}
