@@ -23,6 +23,8 @@ import { ImageADroiteComponent } from './component/image-a-droite/image-a-droite
 import { FondBleuFonceComponent } from './component/fond-bleu-fonce/fond-bleu-fonce.component';
 import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche.component';
 import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragraphe-centre.component';
+import { ImageADroite2Component } from './component/image-a-droite2/image-a-droite2.component';
+import { FooterComponent } from './component/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragra
     FondBleuFonceComponent,
     ImageAGaucheComponent,
     ParagrapheCentreComponent,
+    ImageADroite2Component,
+    FooterComponent,
 
   ],
   imports: [

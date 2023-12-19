@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PageJPOComponent {
   htmlText: string = '<strong>Visites : </strong>des installations par petits groupes (salle de cours, amphis, labos, salles informatiques réalité virtuelle, ...)';
+
+
 }
