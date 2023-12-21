@@ -7,7 +7,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { BackgroundImageComponent } from './component/background-image/background-image.component';
 import { TextOnBackgroundImageComponent } from './component/text-on-background-image/text-on-background-image.component';
 import { PageJPOComponent } from './component/page-jpo/page-jpo.component';
-import { PageAcceuilComponent } from './component/page-acceuil/page-acceuil.component';
+import { PageAcceuilComponent } from './component/page-accueil/page-acceuil.component';
 import { PageVisiteComponent } from './component/page-visite/page-visite.component';
 import { PageRessourcesComponent } from './component/page-ressources/page-ressources.component';
 import { PageQuestionnaireComponent } from './component/page-questionnaire/page-questionnaire.component';
@@ -25,7 +25,7 @@ import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche
 import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragraphe-centre.component';
 import { ImageADroite2Component } from './component/image-a-droite2/image-a-droite2.component';
 import { FooterComponent } from './component/footer/footer.component';
-import { AccueilComponent1Component } from './accueil-component1/accueil-component1.component';
+
 
 @NgModule({
   declarations: [
@@ -52,7 +52,7 @@ import { AccueilComponent1Component } from './accueil-component1/accueil-compone
     ParagrapheCentreComponent,
     ImageADroite2Component,
     FooterComponent,
-    AccueilComponent1Component,
+    
 
   ],
   imports: [
