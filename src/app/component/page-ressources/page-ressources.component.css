@@ -1,0 +1,137 @@
+#Titre{
+    font-family: TT Norms, Arial;
+    font-weight: 100;
+    font-size: 80px;
+    color: white;
+    margin-top: -5%;
+}
+
+#STitre{
+    font-family: TT Norms, Arial;
+    font-weight: 100;
+    font-size: 35px;
+    margin-right: 40%;
+    color: white;
+}
+
+#banniere{
+    position: inherit;
+    padding-left: 10%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url('image/iut.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.imgfond{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+    z-index: -1;
+}
+
+table{
+border-bottom: #2F2A85 10px solid;
+margin-bottom: 100px;
+margin-left: 15%;
+width: 20%;
+}
+
+.STitre{
+    font-family: Acumin Pro, Arial;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: -5px;
+    margin-left: -40%;
+}
+
+#vrac{
+margin-top: -3%;
+max-width: 100%;
+}
+
+.unite{
+    box-shadow: 1px 2px 5px 0px #838383;
+    width: 45%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.illustration{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    padding: 1px 3px;
+}
+
+#unit1{
+    background-color: rgb(247, 236, 105);
+}
+
+#unit2{
+    background-color: rgb(247, 105, 114);
+}
+
+#unit3{
+    background-color: rgb(145, 247, 105);
+}
+
+#unit4{
+    background-color: rgb(247, 174, 105);
+}
+
+#unit5{
+    background-color: rgb(105, 105, 247);
+}
+
+.topunite{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.txtunite{
+    margin-left: 10px;
+}
+
+.ressource{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#fin{
+    display: flex;
+    justify-content: left;
+    margin-left: 26px;
+    margin-bottom: 60px;
+}
+
+.projets{
+    width: 350px;
+    height: 200px;
+    background-color: #2F2A85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 10px;
+    font-family: TT Norms, arial;
+    font-size: xx-large;
+}
+
+#projet{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -40px;
+}
