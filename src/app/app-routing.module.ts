@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PageJPOComponent } from './component/page-jpo/page-jpo.component';
-import { PageAcceuilComponent } from './component/page-acceuil/page-acceuil.component';
+import { PageAcceuilComponent } from './component/page-accueil/page-acceuil.component';
 import { PageAdminEditionComponent } from './component/page-admin-edition/page-admin-edition.component';
 import { PageAdminStatsComponent } from './component/page-admin-stats/page-admin-stats.component';
 import { PageConnexionComponent } from './component/page-connexion/page-connexion.component';
