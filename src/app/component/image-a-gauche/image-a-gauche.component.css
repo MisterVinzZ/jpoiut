@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F4F4; 
+    color: #000000; 
+    height: 70vh;
+}
+
+.image {
+    width: 40%; /* Ajustez la largeur de l'image selon vos besoins */
+    order: 0; /* Met l'image à gauche */
+    overflow: hidden; /* Empêche le dépassement du contenu hors du conteneur */
+}
+
+.image img {
+    width: 100%; /* Assurez-vous que l'image occupe la largeur totale du conteneur */
+    height: 100%;
+    object-fit: cover; /* Ajuste la taille de l'image pour couvrir entièrement le conteneur */
+}
+
+.content {
+    width: 50%; /* Ajustez la largeur du contenu selon vos besoins */
+    padding: 70px;
+    padding-top: 60px;
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-top: 50px; 
+    font-size: 23px;
+    line-height: 1.5;
+    text-align: justify;
+    color: #000000;
+}
+
+.rectangle {
+    position: absolute;
+    width: 350px;
+    height: 12px;
+    background-color: #2F2A85;
+    margin-left: 255px; 
+    margin-bottom: 20px; 
+}

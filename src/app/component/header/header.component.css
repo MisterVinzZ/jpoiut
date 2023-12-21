@@ -41,6 +41,7 @@ body{
 }
 .navbar a{
     color: white;
+    font-size: large;
 }
 .navbar .nav-links ul{
     display: flex;
