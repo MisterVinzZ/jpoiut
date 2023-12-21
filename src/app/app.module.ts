@@ -25,6 +25,7 @@ import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche
 import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragraphe-centre.component';
 import { ImageADroite2Component } from './component/image-a-droite2/image-a-droite2.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { AccueilComponent1Component } from './accueil-component1/accueil-component1.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { FooterComponent } from './component/footer/footer.component';
     ParagrapheCentreComponent,
     ImageADroite2Component,
     FooterComponent,
+    AccueilComponent1Component,
 
   ],
   imports: [
