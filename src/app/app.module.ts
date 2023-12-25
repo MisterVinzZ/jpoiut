@@ -25,7 +25,11 @@ import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche
 import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragraphe-centre.component';
 import { ImageADroite2Component } from './component/image-a-droite2/image-a-droite2.component';
 import { FooterComponent } from './component/footer/footer.component';
+<<<<<<< HEAD
 import { RessourcesComponent } from './component/ressources/ressources.component';
+=======
+import { AccueilComponent1Component } from './component/accueil-component1/accueil-component1.component';
+>>>>>>> d283548a88aa1e4f835eb5b86d69ca7325f55add
 
 
 @NgModule({
@@ -53,7 +57,11 @@ import { RessourcesComponent } from './component/ressources/ressources.component
     ParagrapheCentreComponent,
     ImageADroite2Component,
     FooterComponent,
+<<<<<<< HEAD
     RessourcesComponent,
+=======
+    AccueilComponent1Component,
+>>>>>>> d283548a88aa1e4f835eb5b86d69ca7325f55add
     
 
   ],

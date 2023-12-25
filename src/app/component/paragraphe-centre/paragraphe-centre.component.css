@@ -13,3 +13,13 @@
     font-size: 20px;
     margin: 0; 
   }
+  @media screen and (max-width: 768px) {
+    
+    .paragraphe-text {
+      font-size: 16px;
+      text-align: justify;
+    }
+    .paragraphe-container {
+      padding: 20px; 
+    }
+  }
