@@ -57,11 +57,7 @@ import { AccueilComponent1Component } from './component/accueil-component1/accue
     ParagrapheCentreComponent,
     ImageADroite2Component,
     FooterComponent,
-<<<<<<< HEAD
     RessourcesComponent,
-=======
-    AccueilComponent1Component,
->>>>>>> d283548a88aa1e4f835eb5b86d69ca7325f55add
     
 
   ],
