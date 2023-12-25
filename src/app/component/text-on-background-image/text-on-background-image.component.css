@@ -4,15 +4,30 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff; /* Couleur du texte */
+  color: #fff;
 }
 
 .text-container h1 {
   margin-bottom: 20px;
-  font-size: 70px;
+  font-size: 3em; /* Utilisation de la taille de police relative */
 }
 
 .text-container p {
-  margin-top: 20px; 
-  font-size: 40px;
+  margin-top: 20px;
+  font-size: 2em; /* Utilisation de la taille de police relative */
+}
+
+/* Ajoutez une media query pour ajuster les styles selon la taille de l'écran */
+@media screen and (max-width: 768px) {
+  .text-container {
+    text-align: center; /* Centre le texte sur les petits écrans */
+  }
+
+  .text-container h1 {
+    font-size: 2em; /* Réduisez la taille de la police pour les petits écrans */
+  }
+
+  .text-container p {
+    font-size: 1.5em; /* Réduisez la taille de la police pour les petits écrans */
+  }
 }

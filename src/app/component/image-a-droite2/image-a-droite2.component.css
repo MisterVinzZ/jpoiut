@@ -8,14 +8,14 @@
   
   .image {
     width: 80%;
-    order: 2; /* Change l'ordre d'affichage, met l'image à droite */
-    overflow: hidden; /* Empêche le dépassement du contenu hors du conteneur */
+    order: 2; 
+    overflow: hidden; 
   }
   
   .image img {
-    width: 100%; /* Assurez-vous que l'image occupe la largeur totale du conteneur */
+    width: 100%; 
     height: 100%;
-    object-fit: cover; /* Ajuste la taille de l'image pour couvrir entièrement le conteneur */
+    object-fit: cover; 
   }
   
   .content {
@@ -43,4 +43,37 @@
     background-color: #2F2A85;
     margin-left: 105px; 
     margin-bottom: 20px; 
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column; 
+      justify-content: space-between;
+      height: 120vh;
+    }
+  
+    .image {
+      width: 100%; 
+
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 35px;
+      
+      }
+    p {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    .content {
+      padding: 65px;
+      padding-top: 60px;
+      text-align: left; 
+    }
+  
+    .rectangle {
+      display: block; 
+      margin-left: 0px; 
+    }
   }
