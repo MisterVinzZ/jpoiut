@@ -1,0 +1,36 @@
+.unite{
+    box-shadow: 1px 2px 5px 0px #838383;
+    width: 45%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+#unit1{
+    background-color: rgb(105, 105, 247);
+}
+
+.topunite{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.txtunite{
+    margin-left: 10px;
+}
+
+.ressource{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.illustration{
+    display: flex;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+    padding: 1px 3px;
+}

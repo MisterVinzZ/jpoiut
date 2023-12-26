@@ -25,6 +25,13 @@ import { ImageAGaucheComponent } from './component/image-a-gauche/image-a-gauche
 import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragraphe-centre.component';
 import { ImageADroite2Component } from './component/image-a-droite2/image-a-droite2.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { AccueilComponent1Component } from './component/accueil-component1/accueil-component1.component';
+import { AccueilComponent2Component } from './component/accueil-component2/accueil-component2.component';
+import { AccueilComponent3Component } from './component/accueil-component3/accueil-component3.component';
+import { AccueilComponent4Component } from './component/accueil-component4/accueil-component4.component';
+import { AccueilComponent5Component } from './component/accueil-component5/accueil-component5.component';
+import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
+import { WebglComponent } from './component/webgl/webgl.component';
 
 
 @NgModule({
@@ -52,6 +59,13 @@ import { FooterComponent } from './component/footer/footer.component';
     ParagrapheCentreComponent,
     ImageADroite2Component,
     FooterComponent,
+    AccueilComponent1Component,
+    AccueilComponent2Component,
+    AccueilComponent3Component,
+    AccueilComponent4Component,
+    AccueilComponent5Component,
+    AccueilComponentHeaderComponent,
+    WebglComponent,
     
 
   ],
