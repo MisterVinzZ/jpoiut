@@ -1,6 +1,6 @@
 <nav class="navbar">
     <a href=""><img id="logo" src="../../../assets/images/logo.png" alt="logo_université_Gustave_Eiffel"></a>
-    <div class="nav-links">
+    <div class="nav-links" [class.mobile-menu]="isMobileMenuActive">
         <ul>
             <!-- <li class="active"><a href="#">Accueil</a></li> -->
             <li><a href="page-visite">Visite Virtuelle</a></li>
@@ -9,5 +9,6 @@
             <li id="calltoaction"><a href="page-jpo">Journée JPO</a></li>
         </ul>
     </div>
-    <img src="../../../assets/images/image 18.png" alt="menu hamburger" class="menu-hamburger">
+    <img src="../../../assets/images/image 18.png" alt="menu hamburger" class="menu-hamburger" (click)="toggleMobileMenu()">
+    <!-- ajoute la classe CSS mobile-menu à l'élément si isMobileMenuActive est évalué à true, et la supprime si false. -->
 </nav>
