@@ -6,8 +6,6 @@
 }
 
 body{
-    font-family: "acumin-pro", sans-serif;
-    font-weight: 700;
     font-style: normal;
 }
 
@@ -29,6 +27,8 @@ body{
     box-sizing: border-box;
     position: absolute;
     z-index: 5;
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 700;
 }
 .navbar #logo{
     width: 200px;
@@ -36,8 +36,14 @@ body{
 .navbar .nav-links #calltoaction a{
     color: black;
     background-color: white;
-    padding: 8px 10px 8px 10px;
+    padding: 9px 11px 9px 11px;
     border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.navbar .nav-links #calltoaction a:hover{
+    color: white;
+    background-color: #2F2A85;
+    transform: scale(1.05);
 }
 .navbar a{
     color: white;
