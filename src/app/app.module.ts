@@ -26,6 +26,12 @@ import { ParagrapheCentreComponent } from './component/paragraphe-centre/paragra
 import { ImageADroite2Component } from './component/image-a-droite2/image-a-droite2.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { AccueilComponent1Component } from './component/accueil-component1/accueil-component1.component';
+import { FormationComponent1Component } from './component/formation-component1/formation-component1.component';
+import { FormationComponent2Component } from './component/formation-component2/formation-component2.component';
+import { FormationComponent3Component } from './component/formation-component3/formation-component3.component';
+import { FormationComponent4Component } from './component/formation-component4/formation-component4.component';
+import { FormationComponent5Component } from './component/formation-component5/formation-component5.component';
+import { FormationComponent6Component } from './component/formation-component6/formation-component6.component';
 
 
 @NgModule({
@@ -54,6 +60,12 @@ import { AccueilComponent1Component } from './component/accueil-component1/accue
     ImageADroite2Component,
     FooterComponent,
     AccueilComponent1Component,
+    FormationComponent1Component,
+    FormationComponent2Component,
+    FormationComponent3Component,
+    FormationComponent4Component,
+    FormationComponent5Component,
+    FormationComponent6Component,
     
 
   ],

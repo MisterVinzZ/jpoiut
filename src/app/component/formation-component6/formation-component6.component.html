@@ -1,0 +1,134 @@
+<section class="scrollinghorizontal">
+    <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
+    <img src="/assets/images/fg.png" id="left" class="backbtn">
+    <ul class="carousel">
+      <li class="card">
+        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
+              <section class="separateur"></section>
+        <span>Description JPO</span>
+      </li>
+      <li class="card">
+        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
+              <section class="separateur"></section>
+        <span>Description BUT 1</span>
+      </li>
+      <li class="card">
+        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
+              <section class="separateur"></section>
+        <span>Description BUT 2</span>
+      </li>
+      <li class="card">
+        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
+              <section class="separateur"></section>
+        <span>Description BUT 3</span>
+      </li>
+      <li class="card">
+        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
+              <section class="separateur"></section>
+        <span>Description MMI</span>
+      </li>
+      <li class="card">
+        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
+              <section class="separateur"></section>
+        <span>Description JPO 2</span>
+      </li>
+    </ul>
+    <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
+    <img src="/assets/images/fd.png" id="right" class="backbtn">
+  </section>
+<br><br><br>
+
+<script>
+    // Sélection des éléments DOM nécessaires
+    const scrollinghorizontal = document.querySelector(".scrollinghorizontal");
+    const carousel = document.querySelector(".carousel");
+    const firstCardWidth = carousel.querySelector(".card").offsetWidth;
+    const arrowBtns = document.querySelectorAll(".backbtn");
+    const carouselChildrens = [...carousel.children];
+
+    // Variables de contrôle pour le glisser-déposer et le défilement automatique
+    let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+    // Calcul du nombre de cartes visibles à la fois dans le carrousel
+    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+    // Insérer des copies des dernières cartes au début du carrousel pour le défilement infini
+    carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
+        carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
+    });
+
+    // Insérer des copies des premières cartes à la fin du carrousel pour le défilement infini
+    carouselChildrens.slice(0, cardPerView).forEach(card => {
+        carousel.insertAdjacentHTML("beforeend", card.outerHTML);
+    });
+
+    // Faire défiler le carrousel à la position appropriée pour masquer les premières cartes dupliquées sur Firefox
+    carousel.classList.add("no-transition");
+    carousel.scrollLeft = carousel.offsetWidth;
+    carousel.classList.remove("no-transition");
+
+    // Ajouter des écouteurs d'événements pour les boutons fléchés afin de faire défiler le carrousel à gauche et à droite
+    arrowBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
+        });
+    });
+
+    // Fonction de début du glisser-déposer
+    const dragStart = (e) => {
+        isDragging = true;
+        carousel.classList.add("dragging");
+        // Enregistre la position initiale du curseur et le défilement du carrousel
+        startX = e.pageX;
+        startScrollLeft = carousel.scrollLeft;
+    }
+
+    // Fonction de glisser-déposer en cours
+    const dragging = (e) => {
+        if(!isDragging) return; // Si isDragging est faux, sortir de la fonction
+        // Met à jour la position de défilement du carrousel en fonction du mouvement du curseur
+        carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+    }
+
+    // Fonction de fin du glisser-déposer
+    const dragStop = () => {
+        isDragging = false;
+        carousel.classList.remove("dragging");
+    }
+
+    // Fonction pour le défilement infini du carrousel
+    const infiniteScroll = () => {
+        // Si le carrousel est au début, faire défiler jusqu'à la fin
+        if(carousel.scrollLeft === 0) {
+            carousel.classList.add("no-transition");
+            carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
+            carousel.classList.remove("no-transition");
+        }
+        // Si le carrousel est à la fin, faire défiler jusqu'au début
+        else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
+            carousel.classList.add("no-transition");
+            carousel.scrollLeft = carousel.offsetWidth;
+            carousel.classList.remove("no-transition");
+        }
+
+        // Effacer le délai existant et démarrer le défilement automatique si la souris n'est pas en train de survoler le carrousel
+        clearTimeout(timeoutId);
+        if(!scrollinghorizontal.matches(":hover")) autoPlay();
+    }
+
+    // Fonction de défilement automatique
+    const autoPlay = () => {
+        if(window.innerWidth < 800 || !isAutoPlay) return; // Sortir si la fenêtre est inférieure à 800 pixels ou si isAutoPlay est faux
+        // Faire défiler automatiquement le carrousel toutes les 2500 ms
+        timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
+    }
+    autoPlay();
+
+    // Ajout des écouteurs d'événements pour le glisser-déposer, le défilement automatique et les événements liés à la souris
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("mousemove", dragging);
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("scroll", infiniteScroll);
+    scrollinghorizontal.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+    scrollinghorizontal.addEventListener("mouseleave", autoPlay);
+    </script>
