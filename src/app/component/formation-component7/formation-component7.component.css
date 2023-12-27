@@ -22,18 +22,18 @@ h3 {
     position: absolute;
     bottom: 0;
     left: 230px; /* Ajustez cette valeur selon vos besoins */
-    width: calc(20% - 100px); /* Ajustez en fonction de la position du soulignement */
+    width: calc(15% - 100px); /* Ajustez en fonction de la position du soulignement */
     border-bottom: 10px solid #2F2A85; /* Couleur et épaisseur du soulignement */
 }
   /******SCROLLINGHORIZONTAL******/
-  .backbtn {
+  .backbtn2 {
     width: 60px;
     height: 60px;
     cursor: pointer;
     margin: 40px;
 }  
 
-.scrollinghorizontal {
+.scrollinghorizontal2 {
     width: 95%;
     margin: auto;
     position: relative;
@@ -42,7 +42,7 @@ h3 {
     display: flex;
 
   }
-  .scrollinghorizontal i {
+  .scrollinghorizontal2 i {
     top: 50%;
     height: 50px;
     width: 50px;
@@ -66,7 +66,7 @@ h3 {
   .scrollinghorizontal i:last-child{
     right: -22px;
   } */
-  .scrollinghorizontal .carousel{
+  .scrollinghorizontal2 .carousel2{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100% / 3) - 12px);
@@ -78,31 +78,31 @@ h3 {
     scrollbar-width: none;
   }
   
-  .carousel.no-transition {
+  .carousel2.no-transition {
     scroll-behavior: auto;
   }
-  .carousel.dragging {
+  .carousel2.dragging {
     scroll-snap-type: none;
     scroll-behavior: auto;
   }
-  .carousel.dragging .card {
+  .carousel2.dragging .card2 {
     cursor: grab;
     user-select: none;
   }
-  .carousel :where(.card, .img) {
+  .carousel2 :where(.card2, .img) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .carousel::-webkit-scrollbar {
+  .carousel2::-webkit-scrollbar {
     width: 0.9vh;
     height: 1vh;
   }
-  .carousel::-webkit-scrollbar-thumb {
+  .carousel2::-webkit-scrollbar-thumb {
     background: #2F2A85;
     border-radius: 2vh;
   }
-  .carousel .card {
+  .carousel2 .card2 {
     scroll-snap-align: start;
     width: 85%;
     height: 270px;
@@ -114,20 +114,20 @@ h3 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin: 10px 0px 10px 0px;
   }
-  .carousel .card .img {
+  .carousel2 .card2 .img {
     border-radius: 30%;
   }
-  .card .img img {
+  .card2 .img img {
     width: 140px;
     height: 140px;
     object-fit: cover;
   }
-  .carousel .card h2 {
+  .carousel2 .card2 h2 {
     font-weight: 500;
     font-size: 1.56rem;
     margin: 30px 0 5px;
   }
-  .carousel .card span {
+  .carousel2 .card2 span {
     color: #000000;
     font-size: 1.31rem;
   }

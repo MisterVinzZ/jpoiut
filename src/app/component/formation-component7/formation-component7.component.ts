@@ -1,11 +1,11 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
 
 @Component({
-  selector: 'app-formation-component6',
-  templateUrl: './formation-component6.component.html',
-  styleUrls: ['./formation-component6.component.css']
+  selector: 'app-formation-component7',
+  templateUrl: './formation-component7.component.html',
+  styleUrls: ['./formation-component7.component.css']
 })
-export class FormationComponent6Component implements AfterViewInit, OnDestroy {
+export class FormationComponent7Component implements AfterViewInit, OnDestroy {
   private scrollinghorizontal!: HTMLElement;
   private carousel!: HTMLElement;
   private firstCardWidth!: number;
@@ -18,12 +18,12 @@ export class FormationComponent6Component implements AfterViewInit, OnDestroy {
   private timeoutId: any;
 
   ngAfterViewInit(): void {
-    this.scrollinghorizontal = document.querySelector(".scrollinghorizontal")!;
-    this.carousel = document.querySelector(".carousel")!;
-    this.arrowBtns = document.querySelectorAll(".backbtn");
+    this.scrollinghorizontal = document.querySelector(".scrollinghorizontal2")!;
+    this.carousel = document.querySelector(".carousel2")!;
+    this.arrowBtns = document.querySelectorAll(".backbtn2");
 
     if (this.carousel) {
-      this.firstCardWidth = this.carousel.querySelector<HTMLElement>(".card")!.offsetWidth;
+      this.firstCardWidth = this.carousel.querySelector<HTMLElement>(".card2")!.offsetWidth;
       this.carouselChildrens = Array.from(this.carousel.children) as HTMLElement[];
 
       // Calcul du nombre de cartes visibles à la fois dans le carrousel
@@ -48,12 +48,14 @@ export class FormationComponent6Component implements AfterViewInit, OnDestroy {
       this.arrowBtns.forEach(btn => {
         btn.addEventListener("click", () => {
           if (this.carousel) {
-            this.carousel.scrollLeft += btn.id == "left" ? -this.firstCardWidth : this.firstCardWidth;
+            this.carousel.scrollLeft += btn.id == "left2" ? -this.firstCardWidth : this.firstCardWidth;
           }
         });
       });
 
+
     }
+
 
   }
 
@@ -61,7 +63,7 @@ export class FormationComponent6Component implements AfterViewInit, OnDestroy {
     // Nettoyer les écouteurs d'événements lors de la destruction du composant
     this.removeEventListeners();
   }
-  // ... Reste du code ...
+
 
   // Fonction de début du glisser-déposer
   private dragStart(e: MouseEvent): void {
@@ -113,6 +115,7 @@ private infiniteScroll(): void {
   }
 }
 
+
  // Fonction de défilement automatique
  private autoPlay(): void {
   if (window.innerWidth < 800 || !this.isAutoPlay) return; // Sortir si la fenêtre est inférieure à 800 pixels ou si isAutoPlay est faux
@@ -139,18 +142,19 @@ private infiniteScroll(): void {
     }
   }
 
-    // Suppression des écouteurs d'événements
-    private removeEventListeners(): void {
-      if (this.carousel) {
-        this.carousel.removeEventListener("mousedown", (e) => this.dragStart(e));
-        this.carousel.removeEventListener("mousemove", (e) => this.dragging(e));
-        document.removeEventListener("mouseup", () => this.dragStop());
-        this.carousel.removeEventListener("scroll", () => this.infiniteScroll());
-      }
-  
-      if (this.scrollinghorizontal) {
-        this.scrollinghorizontal.removeEventListener("mouseenter", () => clearTimeout(this.timeoutId));
-        this.scrollinghorizontal.removeEventListener("mouseleave", () => this.autoPlay());
-      }
+
+  // Suppression des écouteurs d'événements
+  private removeEventListeners(): void {
+    if (this.carousel) {
+      this.carousel.removeEventListener("mousedown", (e) => this.dragStart(e));
+      this.carousel.removeEventListener("mousemove", (e) => this.dragging(e));
+      document.removeEventListener("mouseup", () => this.dragStop());
+      this.carousel.removeEventListener("scroll", () => this.infiniteScroll());
     }
+
+    if (this.scrollinghorizontal) {
+      this.scrollinghorizontal.removeEventListener("mouseenter", () => clearTimeout(this.timeoutId));
+      this.scrollinghorizontal.removeEventListener("mouseleave", () => this.autoPlay());
+    }
+  }
 }

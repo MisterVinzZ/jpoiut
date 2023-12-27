@@ -32,6 +32,7 @@ import { FormationComponent3Component } from './component/formation-component3/f
 import { FormationComponent4Component } from './component/formation-component4/formation-component4.component';
 import { FormationComponent5Component } from './component/formation-component5/formation-component5.component';
 import { FormationComponent6Component } from './component/formation-component6/formation-component6.component';
+import { FormationComponent7Component } from './component/formation-component7/formation-component7.component';
 
 
 @NgModule({
@@ -66,6 +67,7 @@ import { FormationComponent6Component } from './component/formation-component6/f
     FormationComponent4Component,
     FormationComponent5Component,
     FormationComponent6Component,
+    FormationComponent7Component,
     
 
   ],
