@@ -27,6 +27,10 @@ import { ImageADroite2Component } from './component/image-a-droite2/image-a-droi
 import { FooterComponent } from './component/footer/footer.component';
 <<<<<<< HEAD
 import { RessourcesComponent } from './component/ressources/ressources.component';
+import { HautRessources1Component } from './component/haut-ressources1/haut-ressources1.component';
+import { VracRessources1Component } from './component/vrac-ressources1/vrac-ressources1.component';
+import { UniteRessources1Component } from './component/unite-ressources1/unite-ressources1.component';
+import { ProjetRessources1Component } from './component/projet-ressources1/projet-ressources1.component';
 =======
 import { AccueilComponent1Component } from './component/accueil-component1/accueil-component1.component';
 import { AccueilComponent2Component } from './component/accueil-component2/accueil-component2.component';
@@ -65,6 +69,10 @@ import { WebglComponent } from './component/webgl/webgl.component';
     FooterComponent,
 <<<<<<< HEAD
     RessourcesComponent,
+HautRessources1Component,
+VracRessources1Component,
+UniteRessources1Component,
+ProjetRessources1Component,
 =======
     AccueilComponent1Component,
     AccueilComponent2Component,
