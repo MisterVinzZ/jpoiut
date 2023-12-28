@@ -39,6 +39,7 @@ import { AccueilComponent4Component } from './component/accueil-component4/accue
 import { AccueilComponent5Component } from './component/accueil-component5/accueil-component5.component';
 import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
 import { WebglComponent } from './component/webgl/webgl.component';
+import { PageAdminComponent } from './component/page-admin/page-admin.component';
 
 
 @NgModule({
@@ -80,6 +81,7 @@ ProjetRessources1Component,
     AccueilComponent5Component,
     AccueilComponentHeaderComponent,
     WebglComponent,
+    PageAdminComponent,
 
     
 

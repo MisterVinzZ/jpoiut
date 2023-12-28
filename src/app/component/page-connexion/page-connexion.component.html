@@ -1,1 +1,23 @@
-<p>page-connexion works!</p>
+<body>
+    <div id="container">
+        <div id="connexionAdministrateur">
+                    <section id="informationConnexion">
+                    <h1> Espace Administrateur</h1>
+                    <p>Accès à l'espace privé <br> administrateur</p>
+                    <button>Besoin d'aide ?</button>
+                    </section>
+
+                    <section id="formulaireConnexion">
+                        <h2>Se connecter à Meaux'vit</h2>
+                        <form method="POST" action="traitement_connexion.php">
+                                <input type="text" placeholder="Login" name="login" id="login">
+                                <input type="password" placeholder="Mot de passe" name="passwd" id="passwd">
+
+                                <input type="submit" value="Se connecter">   
+                                <a  href="#">Mot de passe oublié ?</a>
+                        </form>
+                    </section>
+        </div>
+    </div>
+    <app-footer></app-footer>
+</body>

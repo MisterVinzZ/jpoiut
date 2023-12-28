@@ -1,0 +1,17 @@
+<p>page-admin works!</p>
+<p>page-admin works!</p>
+<p>page-admin works!</p>
+<p>page-admin works!</p>
+
+<button (click)="showStatistics()">Statistiques</button>
+<button (click)="showConfiguration()">Configuration</button>
+
+<div *ngIf="displayStatistics">
+  <!-- Contenu des statistiques ici -->
+  <p>Contenu des statistiques...</p>
+</div>
+
+<div *ngIf="displayConfiguration">
+  <!-- Contenu de la configuration ici -->
+  <p>Contenu de la configuration...</p>
+</div>
