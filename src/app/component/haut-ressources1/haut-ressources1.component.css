@@ -29,7 +29,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: left;
-    background-image: url('images/Ressources/iut.png');
+    background-image: url('../../../assets/images/Ressources/iut.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }

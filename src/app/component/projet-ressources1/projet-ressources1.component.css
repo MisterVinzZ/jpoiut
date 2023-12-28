@@ -21,19 +21,6 @@ body{
     color: white;
 }
 
-#banniere{
-    position: inherit;
-    padding-left: 10%;
-    padding: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    background-image: url('image/iut.png');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
 .imgfond{
     position: absolute;
     width: 100%;
