@@ -39,6 +39,9 @@ import { AccueilComponent4Component } from './component/accueil-component4/accue
 import { AccueilComponent5Component } from './component/accueil-component5/accueil-component5.component';
 import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
 import { WebglComponent } from './component/webgl/webgl.component';
+import { FormulaireContactComponent } from './component/formulaire-contact/formulaire-contact.component';
+import { BanniereContactComponent } from './component/banniere-contact/banniere-contact.component';
+import { TexteContactComponent } from './component/texte-contact/texte-contact.component';
 
 
 @NgModule({
@@ -80,6 +83,9 @@ ProjetRessources1Component,
     AccueilComponent5Component,
     AccueilComponentHeaderComponent,
     WebglComponent,
+    FormulaireContactComponent,
+    BanniereContactComponent,
+    TexteContactComponent,
 
     
 

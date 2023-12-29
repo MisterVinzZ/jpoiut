@@ -1,4 +1,5 @@
 footer{
+  border-top: 3px solid white;
   padding: 10px;
   margin-top: 50px;
   background-color: #2F2A85;
@@ -12,7 +13,8 @@ footer{
 }
 
 #logofooter{
-  width: 300px;
+  width: 250px;
+  margin-bottom: 20px;
 
 }
 
@@ -39,6 +41,7 @@ text-decoration: none;
 }
 
 .reseaufoot{
-  width: 50px;
-  padding: 0px 5px;
+  width: 45px;
+  padding: 0px 15px;
+  margin-bottom: 20px;
 }

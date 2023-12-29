@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: arial;
+    background-color: #2E2A85;
+}
+
+#placement{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#remontada{
+    margin-top: -260px;
+}
+
+#espace{
+    padding: 40px;
+}
