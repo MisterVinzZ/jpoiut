@@ -11,6 +11,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 30px;
 }
 
 #remontada{
@@ -20,3 +21,10 @@ body{
 #espace{
     padding: 40px;
 }
+
+@media screen and (max-width: 800px) {
+    #placement {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+  }

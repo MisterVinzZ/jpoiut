@@ -1,4 +1,5 @@
 footer{
+  position: relative;
   border-top: 3px solid white;
   padding: 20px;
   background-color: #2F2A85;
@@ -42,4 +43,28 @@ color: white;
   width: 45px;
   padding: 0px 15px;
   margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .reseaufoot{
+    padding: 0px 5px;;
+  }
+
+  #footC{
+    margin-top: 200px;
+    font-size: 20px;
+    position: absolute;
+  }
+
+  #footD{
+    margin-left: 200px
+  }
+
+  #footG{
+    margin-left: 25px
+  }
+
+  footer{
+  padding-bottom: 100px;
+  }
 }

@@ -42,6 +42,11 @@ import { WebglComponent } from './component/webgl/webgl.component';
 import { FormulaireContactComponent } from './component/formulaire-contact/formulaire-contact.component';
 import { BanniereContactComponent } from './component/banniere-contact/banniere-contact.component';
 import { TexteContactComponent } from './component/texte-contact/texte-contact.component';
+import { PageRessources2Component } from './component/page-ressources2/page-ressources2.component';
+import { ProjetRessources2Component } from './component/projet-ressources2/projet-ressources2.component';
+import { VracRessources2Component } from './component/vrac-ressources2/vrac-ressources2.component';
+import { UniteRessources2Component } from './component/unite-ressources2/unite-ressources2.component';
+import { HautRessources2Component } from './component/haut-ressources2/haut-ressources2.component';
 
 
 @NgModule({
@@ -86,6 +91,11 @@ ProjetRessources1Component,
     FormulaireContactComponent,
     BanniereContactComponent,
     TexteContactComponent,
+    PageRessources2Component,
+    ProjetRessources2Component,
+    VracRessources2Component,
+    UniteRessources2Component,
+    HautRessources2Component,
 
     
 

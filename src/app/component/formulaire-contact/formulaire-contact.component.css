@@ -40,3 +40,9 @@ form{
     background-color: #1E1A75;
     transition: 0.25s;
 }
+
+@media screen and (max-width: 800px) {
+    form {
+        margin-top: 0px;
+    }
+  }

@@ -1,34 +1,3 @@
-body{
-    background-color: #ffff;
-    margin: 0;
-    padding: 0;
-    font-family: arial;
-}
-
-#Titre{
-    font-family: TT Norms, Arial;
-    font-weight: 100;
-    font-size: 80px;
-    color: white;
-    margin-top: -5%;
-}
-
-#STitre{
-    font-family: TT Norms, Arial;
-    font-weight: 100;
-    font-size: 35px;
-    margin-right: 40%;
-    color: white;
-}
-
-.imgfond{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin-top: -10%;
-    z-index: -1;
-}
-
 table{
 border-bottom: #2F2A85 10px solid;
 margin-bottom: 100px;
@@ -50,126 +19,16 @@ margin-top: -3%;
 max-width: 100%;
 }
 
-.unite{
-    box-shadow: 1px 2px 5px 0px #838383;
-    width: 45%;
-    border-radius: 10px;
-    padding: 15px;
-}
+@media screen and (max-width: 800px) {
+    table {
+        display: none;
+    }
 
-.illustration{
-    display: flex;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 5px;
-    padding: 1px 3px;
-}
+    .STitre{
+        display: none;
+    }
 
-#unit1{
-    background-color: rgb(247, 236, 105);
-}
-
-#unit2{
-    background-color: rgb(247, 105, 114);
-}
-
-#unit3{
-    background-color: rgb(145, 247, 105);
-}
-
-#unit4{
-    background-color: rgb(247, 174, 105);
-}
-
-#unit5{
-    background-color: rgb(105, 105, 247);
-}
-
-.topunite{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-}
-
-.txtunite{
-    margin-left: 10px;
-}
-
-.ressource{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-#fin{
-    display: flex;
-    justify-content: left;
-    margin-left: 26px;
-    margin-bottom: 60px;
-}
-
-.projets{
-    width: 350px;
-    height: 200px;
-    background-color: #2F2A85;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 10px;
-    font-family: TT Norms, arial;
-    font-size: xx-large;
-}
-
-#projet{
-    display: flex;
-    justify-content: space-around;
-    margin-top: -40px;
-}
-
-footer{
-    padding: 10px;
-    margin-top: 50px;
-    background-color: #2F2A85;
-    color: white;
-    font-family: TT Norms, arial;
-    font-size: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#logofooter{
-    width: 350px;
-
-}
-
-#footG{
-width: 350px;
-}
-
-#footC{
-    text-align: center;
-}
-
-.lienfoot{
-color: white;
-text-decoration: none;
-}
-
-#footD{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-}
-
-.reseaufoot{
-    width: 50px;
-    padding: 0px 5px;
-}
+    #vrac{
+        margin-bottom: 30px;
+    }
+  }
