@@ -47,6 +47,11 @@ import { ProjetRessources2Component } from './component/projet-ressources2/proje
 import { VracRessources2Component } from './component/vrac-ressources2/vrac-ressources2.component';
 import { UniteRessources2Component } from './component/unite-ressources2/unite-ressources2.component';
 import { HautRessources2Component } from './component/haut-ressources2/haut-ressources2.component';
+import { PageRessources3Component } from './component/page-ressources3/page-ressources3.component';
+import { ProjetRessources3Component } from './component/projet-ressources3/projet-ressources3.component';
+import { VracRessources3Component } from './component/vrac-ressources3/vrac-ressources3.component';
+import { UniteRessources3Component } from './component/unite-ressources3/unite-ressources3.component';
+import { HautRessources3Component } from './component/haut-ressources3/haut-ressources3.component';
 
 
 @NgModule({
@@ -96,6 +101,11 @@ ProjetRessources1Component,
     VracRessources2Component,
     UniteRessources2Component,
     HautRessources2Component,
+    PageRessources3Component,
+    ProjetRessources3Component,
+    VracRessources3Component,
+    UniteRessources3Component,
+    HautRessources3Component,
 
     
 

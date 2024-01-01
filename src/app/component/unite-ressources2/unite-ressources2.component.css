@@ -5,6 +5,10 @@
     padding: 15px;
 }
 
+.bottomunite{
+    margin-top: 20px;
+}
+
 .illustration{
     display: flex;
     justify-content: center;
@@ -77,8 +81,4 @@
     #fin{
         margin-left: 0px;
         }
-    
-    .bottomunite{
-        margin-top: 20px;
-   }
   }

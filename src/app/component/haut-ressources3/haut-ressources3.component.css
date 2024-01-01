@@ -1,0 +1,54 @@
+body{
+    background-color: #ffff;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+#Titre{
+    font-family: TT Norms, Arial;
+    font-weight: 100;
+    font-size: 80px;
+    color: white;
+    margin-top: -5%;
+}
+
+#STitre{
+    font-family: TT Norms, Arial;
+    font-weight: 100;
+    font-size: 35px;
+    margin-right: 40%;
+    color: white;
+}
+
+#banniere{
+    position: inherit;
+    padding-left: 10%;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-image: url('../../../assets/images/Ressources/iut.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.imgfond{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: -10%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 800px) {
+    #Titre {
+        padding-top: 30px;
+        font-size: 60px;
+    }
+
+    #banniere{
+    padding: 10%;
+    }
+  }
