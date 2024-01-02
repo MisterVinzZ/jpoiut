@@ -51,7 +51,7 @@ export class WebglComponent  implements OnInit {
         // Ajustez la position et l'échelle du modèle
         dae.position.set(0, 0, 0);
         dae.position.divideScalar(2);
-        dae.scale.set(1000, 1000, 1000);
+        dae.scale.set(50, 50, 50);
         dae.updateMatrix();
     
         // Ajoutez le modèle à la scène
@@ -64,10 +64,22 @@ export class WebglComponent  implements OnInit {
     );
 
     // Ajoutez une lumière directionnelle à la scène
-    const light = new THREE.DirectionalLight(0xffffff, 1);
+    const light = new THREE.DirectionalLight(0xffffff, 10);
     light.position.set(0, 0, 200);
     this.scene.add(light);
 
+    const light2 = new THREE.DirectionalLight(0xffffff, 10);
+    light2.position.set(0, 0, -200);
+    this.scene.add(light2);
+
+
+    const light3 = new THREE.DirectionalLight(0xffffff, 1);
+    light3.position.set(-200, 0, 0);
+    this.scene.add(light3);
+
+    const light4 = new THREE.DirectionalLight(0xffffff, 1);
+    light4.position.set(200, 0, 0);
+    this.scene.add(light4);
     // Créez et configurez les contrôles OrbitControls
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.target.set(10, 10, 0);
