@@ -39,6 +39,19 @@ import { AccueilComponent4Component } from './component/accueil-component4/accue
 import { AccueilComponent5Component } from './component/accueil-component5/accueil-component5.component';
 import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
 import { WebglComponent } from './component/webgl/webgl.component';
+import { FormulaireContactComponent } from './component/formulaire-contact/formulaire-contact.component';
+import { BanniereContactComponent } from './component/banniere-contact/banniere-contact.component';
+import { TexteContactComponent } from './component/texte-contact/texte-contact.component';
+import { PageRessources2Component } from './component/page-ressources2/page-ressources2.component';
+import { ProjetRessources2Component } from './component/projet-ressources2/projet-ressources2.component';
+import { VracRessources2Component } from './component/vrac-ressources2/vrac-ressources2.component';
+import { UniteRessources2Component } from './component/unite-ressources2/unite-ressources2.component';
+import { HautRessources2Component } from './component/haut-ressources2/haut-ressources2.component';
+import { PageRessources3Component } from './component/page-ressources3/page-ressources3.component';
+import { ProjetRessources3Component } from './component/projet-ressources3/projet-ressources3.component';
+import { VracRessources3Component } from './component/vrac-ressources3/vrac-ressources3.component';
+import { UniteRessources3Component } from './component/unite-ressources3/unite-ressources3.component';
+import { HautRessources3Component } from './component/haut-ressources3/haut-ressources3.component';
 
 
 @NgModule({
@@ -80,6 +93,19 @@ ProjetRessources1Component,
     AccueilComponent5Component,
     AccueilComponentHeaderComponent,
     WebglComponent,
+    FormulaireContactComponent,
+    BanniereContactComponent,
+    TexteContactComponent,
+    PageRessources2Component,
+    ProjetRessources2Component,
+    VracRessources2Component,
+    UniteRessources2Component,
+    HautRessources2Component,
+    PageRessources3Component,
+    ProjetRessources3Component,
+    VracRessources3Component,
+    UniteRessources3Component,
+    HautRessources3Component,
 
     
 

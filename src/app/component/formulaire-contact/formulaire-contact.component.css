@@ -1,0 +1,48 @@
+form{
+    background-color: white;
+    border-radius: 15px;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 30px;
+    margin-top: -200px;
+}
+
+.champs{
+    border-radius: 5px;
+    border: solid 1px #6E6E6E;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#mess{
+    font-family: Arial;
+    border-radius: 5px;
+    border: solid 1px #6E6E6E;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 100px;
+}
+
+#bouton{
+    background-color: #2E2A85;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#bouton:hover{
+    background-color: #1E1A75;
+    transition: 0.25s;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        margin-top: 0px;
+    }
+  }
