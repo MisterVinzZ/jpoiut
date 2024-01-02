@@ -26,3 +26,16 @@
     width: 60px;
     height: 60px;
 }
+
+@media (max-width: 768px) {
+    .container-3 {
+      flex-direction: column; 
+      height: auto; 
+    }
+  
+    .container-3 .one, .container-3 .two, .container-3 .three {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+  }
+  
