@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -40,10 +42,13 @@ import { AccueilComponent5Component } from './component/accueil-component5/accue
 import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
 import { WebglComponent } from './component/webgl/webgl.component';
 import { PageAdminComponent } from './component/page-admin/page-admin.component';
+import { FormsModule } from '@angular/forms';
+import { ApiService } from './services/api.service';
 
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     HeaderComponent,
     BackgroundImageComponent,
@@ -81,16 +86,15 @@ ProjetRessources1Component,
     AccueilComponent5Component,
     AccueilComponentHeaderComponent,
     WebglComponent,
-    PageAdminComponent,
-
-    
-
+    PageAdminComponent,    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
