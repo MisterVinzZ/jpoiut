@@ -162,7 +162,7 @@ export class WebglComponent implements OnInit {
         this.backgroundMaterial.color = new THREE.Color(0x333333); // Changez la couleur du fond lors du zoom
   
         // Ajoutez une petite animation de translation au cylindre
-        this.translateCylinder(clickedObject, 0.03); // Ajustez la distance de translation selon vos besoins
+        this.translateCylinder(clickedObject, 0.025); // Ajustez la distance de translation selon vos besoins
       } else {
         // Sinon, réinitialisez le zoom à 1
         this.camera.zoom = 1;
