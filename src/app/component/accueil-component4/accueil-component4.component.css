@@ -55,3 +55,22 @@
     border: 2px solid #2F2A85;
     transform: scale(1.05);
   }
+
+  @media (max-width: 768px) {
+    .container-4 {
+      flex-direction: column; 
+      height: auto;
+    }
+  
+    .container-4 .infos-left,
+    .container-4 .infos-right {
+      width: 100%; 
+    }
+  
+    .container-4 .infos-right button {
+      width: 80%; 
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 20px;
+    }
+  }

@@ -81,3 +81,20 @@ font-weight: 400;
     width: 5px;
     background-color: rgb(227, 208, 208);
 }
+
+
+@media (max-width: 768px) {
+    .container-1 {
+      flex-direction: column; 
+      height: auto; 
+    }
+  
+    .container-1 .infos-left,
+    .container-1 .infos-right {
+      width: 100%; 
+    }
+  
+    .sep {
+      display: none; 
+    }
+  }

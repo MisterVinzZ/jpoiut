@@ -1,0 +1,12 @@
+#bannière{
+    background-image: url('../../../assets/images/Contact/iutgooglemaps.png');
+    background-repeat: no-repeat;
+    padding: 150px;
+    background-size: 100%;
+    }
+
+    @media screen and (max-width: 800px) {
+        #bannière {
+            padding: 100px;
+        }
+      }
