@@ -52,6 +52,7 @@ import { ProjetRessources3Component } from './component/projet-ressources3/proje
 import { VracRessources3Component } from './component/vrac-ressources3/vrac-ressources3.component';
 import { UniteRessources3Component } from './component/unite-ressources3/unite-ressources3.component';
 import { HautRessources3Component } from './component/haut-ressources3/haut-ressources3.component';
+import { PageQuizzResultatComponent1Component } from './component/page-quizz-resultat-component1/page-quizz-resultat-component1.component';
 
 
 @NgModule({
@@ -106,6 +107,7 @@ ProjetRessources1Component,
     VracRessources3Component,
     UniteRessources3Component,
     HautRessources3Component,
+    PageQuizzResultatComponent1Component,
 
     
 

@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#general {
+    width: 100%;
+}
+/*********FOND**********/
+
+#fond {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Ressources/fond2.jpg'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajustement pour les écrans plus petits */
+    background-position: center; /* Ajustement pour les écrans plus petits */
+    position: relative;
+    }
+
+#fond::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1B1950; 
+    opacity: 0.6;
+}
+  /*********FOND**********/
+
+  #container {
+    width: 90%;
+    height: 49vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    /* background-color: red; */
+    
+}
+
+#containerg {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+}
+
+img {
+    width: 25vw;
+    height: 22vw;
+}
+
+#containertxt {
+    width: 100%;
+    height: 5vw;
+    margin: 9vw 0 4vw 0;
+    text-align: center;
+    /* background-color: red; */
+}
+
+#containerimg {
+    width: 100%;
+    height: 25vw;
+    margin: auto;
+    text-align: center;
+    /* background-color: rgb(179, 255, 0); */
+}
+
+#containerd {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 170); */
+}
+
+#containerq {
+    width: 80%;
+    height: 35vw;
+    display: block;
+    margin: 8vw auto;
+    background-color: white;
+    border-radius: 15px;
+
+}
+
+input {
+    width: 80%;
+    height: 3vw;
+    background-color: white;
+    border: solid 1px black;
+    border-radius: 10px;
+    margin-top: 4vw;
+    margin-left: 10%;
+    padding-left: 1vw;
+}
+
+#button {
+    width: 30%;
+    height: 3vw;
+    background-color: #1B1950;
+    color: white;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    
+}
