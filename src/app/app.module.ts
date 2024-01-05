@@ -31,8 +31,15 @@ import { HautRessources1Component } from './component/haut-ressources1/haut-ress
 import { VracRessources1Component } from './component/vrac-ressources1/vrac-ressources1.component';
 import { UniteRessources1Component } from './component/unite-ressources1/unite-ressources1.component';
 import { ProjetRessources1Component } from './component/projet-ressources1/projet-ressources1.component';
-
 import { AccueilComponent1Component } from './component/accueil-component1/accueil-component1.component';
+import { FormationComponent1Component } from './component/formation-component1/formation-component1.component';
+import { FormationComponent2Component } from './component/formation-component2/formation-component2.component';
+import { FormationComponent3Component } from './component/formation-component3/formation-component3.component';
+import { FormationComponent4Component } from './component/formation-component4/formation-component4.component';
+import { FormationComponent5Component } from './component/formation-component5/formation-component5.component';
+import { FormationComponent6Component } from './component/formation-component6/formation-component6.component';
+import { FormationComponent7Component } from './component/formation-component7/formation-component7.component';
+
 
 
 @NgModule({
@@ -68,6 +75,37 @@ UniteRessources1Component,
 ProjetRessources1Component,
 
     AccueilComponent1Component,
+<<<<<<< HEAD
+    FormationComponent1Component,
+    FormationComponent2Component,
+    FormationComponent3Component,
+    FormationComponent4Component,
+    FormationComponent5Component,
+    FormationComponent6Component,
+    FormationComponent7Component,
+=======
+    AccueilComponent2Component,
+    AccueilComponent3Component,
+    AccueilComponent4Component,
+    AccueilComponent5Component,
+    AccueilComponentHeaderComponent,
+    WebglComponent,
+    FormulaireContactComponent,
+    BanniereContactComponent,
+    TexteContactComponent,
+    PageRessources2Component,
+    ProjetRessources2Component,
+    VracRessources2Component,
+    UniteRessources2Component,
+    HautRessources2Component,
+    PageRessources3Component,
+    ProjetRessources3Component,
+    VracRessources3Component,
+    UniteRessources3Component,
+    HautRessources3Component,
+    PageQuizzResultatComponent1Component,
+
+>>>>>>> main
     
 
   ],
