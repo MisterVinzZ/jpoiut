@@ -31,7 +31,28 @@ import { HautRessources1Component } from './component/haut-ressources1/haut-ress
 import { VracRessources1Component } from './component/vrac-ressources1/vrac-ressources1.component';
 import { UniteRessources1Component } from './component/unite-ressources1/unite-ressources1.component';
 import { ProjetRessources1Component } from './component/projet-ressources1/projet-ressources1.component';
+
 import { AccueilComponent1Component } from './component/accueil-component1/accueil-component1.component';
+import { AccueilComponent2Component } from './component/accueil-component2/accueil-component2.component';
+import { AccueilComponent3Component } from './component/accueil-component3/accueil-component3.component';
+import { AccueilComponent4Component } from './component/accueil-component4/accueil-component4.component';
+import { AccueilComponent5Component } from './component/accueil-component5/accueil-component5.component';
+import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
+import { WebglComponent } from './component/webgl/webgl.component';
+import { FormulaireContactComponent } from './component/formulaire-contact/formulaire-contact.component';
+import { BanniereContactComponent } from './component/banniere-contact/banniere-contact.component';
+import { TexteContactComponent } from './component/texte-contact/texte-contact.component';
+import { PageRessources2Component } from './component/page-ressources2/page-ressources2.component';
+import { ProjetRessources2Component } from './component/projet-ressources2/projet-ressources2.component';
+import { VracRessources2Component } from './component/vrac-ressources2/vrac-ressources2.component';
+import { UniteRessources2Component } from './component/unite-ressources2/unite-ressources2.component';
+import { HautRessources2Component } from './component/haut-ressources2/haut-ressources2.component';
+import { PageRessources3Component } from './component/page-ressources3/page-ressources3.component';
+import { ProjetRessources3Component } from './component/projet-ressources3/projet-ressources3.component';
+import { VracRessources3Component } from './component/vrac-ressources3/vrac-ressources3.component';
+import { UniteRessources3Component } from './component/unite-ressources3/unite-ressources3.component';
+import { HautRessources3Component } from './component/haut-ressources3/haut-ressources3.component';
+import { PageQuizzResultatComponent1Component } from './component/page-quizz-resultat-component1/page-quizz-resultat-component1.component';
 import { FormationComponent1Component } from './component/formation-component1/formation-component1.component';
 import { FormationComponent2Component } from './component/formation-component2/formation-component2.component';
 import { FormationComponent3Component } from './component/formation-component3/formation-component3.component';
@@ -39,8 +60,6 @@ import { FormationComponent4Component } from './component/formation-component4/f
 import { FormationComponent5Component } from './component/formation-component5/formation-component5.component';
 import { FormationComponent6Component } from './component/formation-component6/formation-component6.component';
 import { FormationComponent7Component } from './component/formation-component7/formation-component7.component';
-
-
 
 @NgModule({
   declarations: [
@@ -75,15 +94,6 @@ UniteRessources1Component,
 ProjetRessources1Component,
 
     AccueilComponent1Component,
-<<<<<<< HEAD
-    FormationComponent1Component,
-    FormationComponent2Component,
-    FormationComponent3Component,
-    FormationComponent4Component,
-    FormationComponent5Component,
-    FormationComponent6Component,
-    FormationComponent7Component,
-=======
     AccueilComponent2Component,
     AccueilComponent3Component,
     AccueilComponent4Component,
@@ -104,8 +114,15 @@ ProjetRessources1Component,
     UniteRessources3Component,
     HautRessources3Component,
     PageQuizzResultatComponent1Component,
+    FormationComponent1Component,
+    FormationComponent2Component,
+    FormationComponent3Component,
+    FormationComponent4Component,
+    FormationComponent5Component,
+    FormationComponent6Component,
+    FormationComponent7Component,
 
->>>>>>> main
+
     
 
   ],
