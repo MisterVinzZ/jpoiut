@@ -17,7 +17,7 @@ body {
 #fond {
     width: 100%;
     height: 100vh;
-    background-image: url('Ressources/fond2.jpg'); 
+    background-image: url('/assets/images/Ressources/fond2.jpg'); 
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover; /* Ajustement pour les écrans plus petits */
