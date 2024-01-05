@@ -1,0 +1,41 @@
+/* CONTAINER 3 */
+.container-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 100vw;
+    color: white;
+    background-color: #2F2A85;
+    
+}
+.container-3 .one, .two, .three{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 40vh;
+    padding: 5px 5px 5px 5px;
+}
+
+.container-3 p{
+    margin-top: 10px;
+}
+.container-3 img{
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width: 768px) {
+    .container-3 {
+      flex-direction: column; 
+      height: auto; 
+    }
+  
+    .container-3 .one, .container-3 .two, .container-3 .three {
+      width: 100%; 
+      margin-bottom: 10px; 
+    }
+  }
+  

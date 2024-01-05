@@ -1,32 +1,70 @@
-.footer {
-    background-color: #2F2A85;
-    color: #fff;
-    padding: 40px;
-    height: 20vh;
-    display: flex;
-    align-items: center;
+footer{
+  position: relative;
+  border-top: 3px solid white;
+  padding: 20px;
+  background-color: #2F2A85;
+  color: white;
+  font-family: TT Norms, arial;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#logofooter{
+  width: 250px;
+  margin-bottom: 20px;
+
+}
+
+#footG{
+width: 350px;
+}
+
+#footC{
+  margin-top: 60px;
+  text-align: center;
+}
+
+.lienfoot{
+color: white;
+}
+
+#footD{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+}
+
+.reseaufoot{
+  width: 45px;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .reseaufoot{
+    padding: 0px 5px;;
   }
-  
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+
+  #footC{
+    margin-top: 200px;
+    font-size: 20px;
+    position: absolute;
   }
-  
-  .logo {
-    width: 50px;
-    height: auto;
-    margin-right: 20px;
+
+  #footD{
+    margin-left: 200px
   }
-  
-  .info {
-    max-width: 400px;
-    text-align: left;
+
+  #footG{
+    margin-left: 25px
   }
-  
-  .info p {
-    margin: 5px 0;
-    font-size: 14px;
+
+  footer{
+  padding-bottom: 100px;
   }
-  
+}

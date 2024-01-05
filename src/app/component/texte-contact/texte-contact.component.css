@@ -1,0 +1,33 @@
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#info{
+    display: flex;
+    flex-direction: row;
+}
+
+#txtadresse{
+    width: 200px;
+}
+
+#adresse{
+    margin-right: 50px;
+}
+
+h3{
+    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 500;
+}
+
+p{
+    font-weight: 100;
+}
+
+@media screen and (max-width: 800px) {
+    #info {
+      display: none;
+    }
+  }

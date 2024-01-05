@@ -1,0 +1,79 @@
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../../../assets/images/iut1.jpg);
+    background-size: cover;
+    z-index: 1;
+    font-family: "acumin-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header h1{
+    padding: 20px;
+    color: white;
+    font-size: 4.5vw;
+    margin-left: 50px;
+    margin: 20px;
+}
+header  h2{
+    padding: 20px;
+    margin-left: 50px;
+    color: white;
+    font-size: 1vw;
+    font-style: normal;
+    margin: 20px;
+}
+
+
+/* COUNTDOWN */
+#countdown{
+    position: relative;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 40px;
+    z-index: 2;
+    text-align: center;
+}
+.container{
+    width: 100px;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    color: white;
+}
+.value{
+    display: block;
+    font-weight: 700;
+    font-size: 2vw;
+}
+.label{
+    text-transform: uppercase;
+    font-size: 1;
+}
+
+@media (max-width: 768px) {
+    header  h2{
+        font-size: 3vw;
+    }
+    header  h1{
+        font-size: 6vw;
+    }
+    .container {
+        width: 80px;
+        padding: 15px;
+    }
+
+    .value {
+        font-size: 3vw;
+    }
+
+    .label {
+        font-size: 1vw;
+    }
+}
