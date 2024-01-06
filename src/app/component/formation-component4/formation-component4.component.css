@@ -122,12 +122,7 @@ p {
     }
     
     .titrenoire:after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 100px; /* Ajustez cette valeur selon vos besoins */
-        width: calc(70% - 100px); /* Ajustez en fonction de la position du soulignement */
-        border-bottom: 10px solid #2F2A85; /* Couleur et épaisseur du soulignement */
+        content: none;
     }
     
     .icons {
