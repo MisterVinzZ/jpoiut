@@ -39,15 +39,21 @@ body{
     padding: 9px 11px 9px 11px;
     border-radius: 50px;
     transition: background-color 0.3s, color 0.3s;
+    border: 2px solid white;
 }
 .navbar .nav-links #calltoaction a:hover{
     color: white;
-    background-color: #2F2A85;
+    background-color: #2f2a8500;
     transform: scale(1.05);
+    border: 2px solid white;
 }
 .navbar a{
     color: white;
     font-size: large;
+    transition: opacity 0.2s;
+}
+.navbar a:hover{
+    opacity: 0.7;
 }
 .navbar .nav-links ul{
     display: flex;
