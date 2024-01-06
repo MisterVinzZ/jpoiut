@@ -90,7 +90,7 @@ p {
         height: 16vw;
         display: flex;
         margin: 12vw auto;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     
     #container4 {
