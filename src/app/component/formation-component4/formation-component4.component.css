@@ -2,7 +2,6 @@
 
  #organisationformation {
     width: 83%;
-    height: 30vw;
     margin: auto;
     /* background-color: red; */
 }
@@ -75,6 +74,78 @@ h4 {
 
 p {
     font-size: 1.1em;
-    margin: 2vw;
+    padding: 4vw;
 }
   /****ORGANISATIONFORMATION******/
+
+@media (max-width: 768px) {
+
+    #organisationformation {
+        width: 100%;
+
+        /* background-color: red; */
+    }
+    
+    #container3 {
+        height: 16vw;
+        display: flex;
+        margin: 12vw auto;
+        background-color: aqua;
+    }
+    
+    #container4 {
+        width: 100%;
+        height: 15vw;
+        display: flex;
+        /* background-color: red; */
+    }
+    
+    #container5 {
+        width: 100%;
+        height: 15vw;
+        padding: 3vw;
+        background-color: aqua;
+    }
+    
+    .containericons {
+        width: 15%;
+        height: 10vw;
+        text-align: center;
+        margin: auto;
+        /* background-color: yellow; */
+    }
+    
+    .titrenoire {
+        padding: 3vw;
+        color: black;
+        position: relative;
+    }
+    
+    .titrenoire:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 100px; /* Ajustez cette valeur selon vos besoins */
+        width: calc(70% - 100px); /* Ajustez en fonction de la position du soulignement */
+        border-bottom: 10px solid #2F2A85; /* Couleur et épaisseur du soulignement */
+    }
+    
+    .icons {
+        width: 60px;
+        height: 60px;
+        
+    }
+    
+    
+    h4 {
+        display: none;
+
+    
+    }
+    
+    p {
+        font-size: 1.1em;
+        padding: 6vw;
+    }
+
+}

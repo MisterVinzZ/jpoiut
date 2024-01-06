@@ -1,7 +1,6 @@
   /****INFOFORMATION******/
   #infoformation {
     width: 80%;
-    height: 26vw;
     margin-top: -10vw;
     left: 10%;
     right: 10%;
@@ -25,6 +24,29 @@ p {
 
 #blanc {
     width: 100%;
-    height: 20vw;
+    height: 25vw;
+
 }
   /****INFOFORMATION******/
+
+@media (max-width: 768px) {
+
+    #infoformation {
+        width: 80%;
+        margin-top: -25vw; 
+    }
+    
+    h3 {
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 1.1em;
+        margin: 3vw;
+    }
+
+    #blanc {
+        height: 160vh;
+    }
+}
