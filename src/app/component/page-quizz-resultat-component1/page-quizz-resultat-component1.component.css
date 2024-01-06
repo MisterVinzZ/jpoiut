@@ -57,6 +57,7 @@ body {
 h1 {
     color: white;
     font-size: 5rem;
+    margin: 0;
 }
 
 img {
@@ -86,35 +87,124 @@ img {
     /* background-color: rgb(0, 255, 170); */
 }
 
-#containerq {
-    width: 80%;
-    height: 35vw;
-    display: block;
-    margin: 8vw auto;
+#formulaire1{
     background-color: white;
     border-radius: 15px;
-
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 85px 35px 85px 35px;
+    margin: 10vw auto;
 }
 
-input {
-    width: 80%;
-    height: 3vw;
-    background-color: white;
-    border: solid 1px black;
-    border-radius: 10px;
-    margin-top: 4vw;
-    margin-left: 10%;
-    padding-left: 1vw;
-}
+    .champs{
+        border-radius: 5px;
+        border: solid 1px #6E6E6E;
+        margin-bottom: 35px;
+        padding: 25px ;
+    }
 
-#button {
-    width: 30%;
-    height: 3vw;
-    background-color: #1B1950;
+
+#bouton{
+    background-color: #2E2A85;
     color: white;
-    padding: 0;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.25s;
 }
+
+#bouton:hover{
+    background-color: #1E1A75;
+    transition: 0.25s;
+}
+
+#formulaire2 {
+    display: none;
+}
+
+
 
 @media (max-width: 768px) {
+
+
+      #container {
+        width: 100%;
+        height: 170vw;
+        display: block;
+        margin: auto;
+    }
     
+    #containerg {
+        width: 100%;
+        height: 30%;
+        align-items: center;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 2.1em;
+        margin: auto;
+        padding-top: 30vw;
+    }
+    
+    
+    #containertxt {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    #containerimg {
+        display: none;
+    }
+    
+    #containerd {
+        width: 100%;
+        height: 70%;
+        padding: 10vw;
+    }
+
+    #formulaire1 {
+        display: none;
+    }
+
+    #formulaire2{
+        background-color: white;
+        border-radius: 15px;
+        font-family: arial;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 60px 30px 60px 30px;
+        margin: auto;
+    }
+    
+    .champs2{
+        border-radius: 5px;
+        border: solid 1px #6E6E6E;
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+    
+    #bouton2{
+        background-color: #2E2A85;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        margin: auto;
+
+    }
+    
+    #bouton2:hover{
+        background-color: #1E1A75;
+        transition: 0.25s;
+    }
+
 }
