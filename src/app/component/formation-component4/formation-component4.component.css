@@ -89,7 +89,7 @@ p {
     #container3 {
         height: 16vw;
         display: flex;
-        margin: 12vw auto;
+        margin: 6vw auto;
         /* background-color: aqua; */
     }
     
@@ -104,7 +104,7 @@ p {
         width: 100%;
         height: 15vw;
         padding: 3vw;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     
     .containericons {
