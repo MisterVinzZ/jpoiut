@@ -60,8 +60,10 @@ import { FormationComponent4Component } from './component/formation-component4/f
 import { FormationComponent5Component } from './component/formation-component5/formation-component5.component';
 import { FormationComponent6Component } from './component/formation-component6/formation-component6.component';
 import { FormationComponent7Component } from './component/formation-component7/formation-component7.component';
+import { ComponentQuizzComponent } from './component/component-quizz/component-quizz.component';
 import { SeparationContactComponent } from './component/separation-contact/separation-contact.component';
 import { PageQuizzComponent1Component } from './component/page-quizz-component1/page-quizz-component1.component';
+
 
 @NgModule({
   declarations: [
@@ -123,9 +125,12 @@ ProjetRessources1Component,
     FormationComponent5Component,
     FormationComponent6Component,
     FormationComponent7Component,
+    ComponentQuizzComponent,
+
     SeparationContactComponent,
     PageQuizzComponent1Component,
 
+    SeparationContactComponent
 
     
 

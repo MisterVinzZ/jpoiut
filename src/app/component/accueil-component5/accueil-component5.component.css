@@ -2,9 +2,14 @@
     box-shadow: 1px 2px 5px 0px #838383;
     width: 35%;
     border-radius: 10px;
-    padding: 55px;
+    padding: 40px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
+    text-align: justify;
+}
+.unite a{
+    text-decoration: none;
+    color: black;
 }
 
 .unite:hover{
