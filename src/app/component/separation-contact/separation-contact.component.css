@@ -3,3 +3,10 @@ img{
     margin-top: -150px;
     padding-left: 10%;
 }
+
+@media screen and (max-width: 800px) {
+    img{
+        max-width: 0;
+    }
+    
+}
