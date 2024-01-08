@@ -31,6 +31,8 @@
     padding: 30px;
     font-weight: 400;
     color: #333;
+    text-decoration: none;
+    text-align: justify;
 }
 .container-4 .infos-right button {
     padding: 10px 20px;
