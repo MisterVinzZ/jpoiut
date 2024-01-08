@@ -1,0 +1,161 @@
+#containerdoc {
+    width: 100%;
+    margin: auto;
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 2vw 2vw 3vw 2vw;
+    color: #2F2A85;
+}
+
+.titrenoire {
+    margin: 0 0 2vw 0;
+    padding: 2vw 0 0.5vw 3vw;
+    color: black;
+    position: relative;
+}
+
+.titrenoire:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 230px; /* Ajustez cette valeur selon vos besoins */
+    width: calc(20% - 100px); /* Ajustez en fonction de la position du soulignement */
+    border-bottom: 10px solid #2F2A85; /* Couleur et épaisseur du soulignement */
+}
+  /******SCROLLINGHORIZONTAL******/
+  .backbtn {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    margin: 40px;
+}  
+
+.scrollinghorizontal {
+    width: 95%;
+    margin: auto;
+    position: relative;
+    align-items: center;
+    justify-content: center;  
+    display: flex;
+
+  }
+  .scrollinghorizontal i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #2F2A85;
+    border-radius: 50%;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  /* .scrollinghorizontal i:active{
+    transform: translateY(-50%) scale(0.85);
+  }
+  .scrollinghorizontal i:first-child{
+    left: -22px;
+  }
+  .scrollinghorizontal i:last-child{
+    right: -22px;
+  } */
+  .scrollinghorizontal .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel::-webkit-scrollbar {
+    width: 0.9vh;
+    height: 1vh;
+  }
+  .carousel::-webkit-scrollbar-thumb {
+    background: #2F2A85;
+    border-radius: 2vh;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    width: 85%;
+    height: 270px;
+    list-style: none;
+    cursor: pointer;
+    flex-direction: column;
+    border: solid #ffffff00;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 10px 0px 10px 0px;
+  }
+  .carousel .card .img {
+    border-radius: 30%;
+  }
+  .card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #000000;
+    font-size: 1.31rem;
+  }
+  .separateur {
+      color: #000000;
+      width: 30%;
+      height: 2px;
+  }
+  @media screen and (max-width: 900px) {
+    .scrollinghorizontal .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+
+    .carousel .card {
+      width: 90%;
+    }
+
+    .backbtn {
+      margin: 0;
+  }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .scrollinghorizontal .carousel {
+      grid-auto-columns: 100%;
+    }
+
+    .backbtn {
+      margin: 0;
+  }
+  }
+    /******SCROLLINGHORIZONTAL******/

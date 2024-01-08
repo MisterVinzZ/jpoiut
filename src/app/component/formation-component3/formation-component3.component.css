@@ -1,0 +1,80 @@
+ /****APRESFORMATION******/
+ #apresformation {
+    width: 100%;
+    background-color: #2F2A85;
+}
+
+#container2 {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    /* background-color: blue; */
+}
+
+#containertxt {
+    width: 70%;
+    /* background-color: red; */
+}
+
+.titre {
+    color: white;
+    padding: 2vw 0 0 12vw;
+    margin: 0;
+}
+
+.txt {
+    color: white;
+}
+
+#img1 {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 5%;
+    margin: 2vw;
+
+}
+
+h3 {
+    font-size: 2.5em;
+    margin: 2vw 2vw 3vw 2vw;
+    color: #2F2A85;
+}
+p {
+    font-size: 1.1em;
+    margin: 2vw;
+}
+
+  /****APRESFORMATION******/
+
+  @media (max-width: 768px) {
+
+    #apresformation {
+        background-color: white;
+    }
+    
+    #container2 {
+        display: flex;
+        margin: auto;
+    }
+    
+    #containertxt {
+        width: 100%;
+    }
+    
+    .titre {
+        color: black;
+        padding: 6vw;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .txt {
+        color: black;
+    }
+    
+    #img1 {
+        display: none;
+    
+    }
+
+  }

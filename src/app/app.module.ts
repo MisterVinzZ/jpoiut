@@ -41,11 +41,8 @@ import { AccueilComponent4Component } from './component/accueil-component4/accue
 import { AccueilComponent5Component } from './component/accueil-component5/accueil-component5.component';
 import { AccueilComponentHeaderComponent } from './component/accueil-component-header/accueil-component-header.component';
 import { WebglComponent } from './component/webgl/webgl.component';
-<<<<<<< HEAD
-import { PageAdminComponent } from './component/page-admin/page-admin.component';
 import { FormsModule } from '@angular/forms';
 import { ApiService } from './services/api.service';
-=======
 import { FormulaireContactComponent } from './component/formulaire-contact/formulaire-contact.component';
 import { BanniereContactComponent } from './component/banniere-contact/banniere-contact.component';
 import { TexteContactComponent } from './component/texte-contact/texte-contact.component';
@@ -59,7 +56,19 @@ import { ProjetRessources3Component } from './component/projet-ressources3/proje
 import { VracRessources3Component } from './component/vrac-ressources3/vrac-ressources3.component';
 import { UniteRessources3Component } from './component/unite-ressources3/unite-ressources3.component';
 import { HautRessources3Component } from './component/haut-ressources3/haut-ressources3.component';
+<<<<<<< HEAD
 >>>>>>> 91e74a86e68c79b0d4beab01cd7f54d7af5c2fa6
+=======
+import { PageQuizzResultatComponent1Component } from './component/page-quizz-resultat-component1/page-quizz-resultat-component1.component';
+import { FormationComponent1Component } from './component/formation-component1/formation-component1.component';
+import { FormationComponent2Component } from './component/formation-component2/formation-component2.component';
+import { FormationComponent3Component } from './component/formation-component3/formation-component3.component';
+import { FormationComponent4Component } from './component/formation-component4/formation-component4.component';
+import { FormationComponent5Component } from './component/formation-component5/formation-component5.component';
+import { FormationComponent6Component } from './component/formation-component6/formation-component6.component';
+import { FormationComponent7Component } from './component/formation-component7/formation-component7.component';
+import { ComponentQuizzComponent } from './component/component-quizz/component-quizz.component';
+import { SeparationContactComponent } from './component/separation-contact/separation-contact.component';
 
 
 @NgModule({
@@ -102,9 +111,6 @@ ProjetRessources1Component,
     AccueilComponent5Component,
     AccueilComponentHeaderComponent,
     WebglComponent,
-<<<<<<< HEAD
-    PageAdminComponent,    
-=======
     FormulaireContactComponent,
     BanniereContactComponent,
     TexteContactComponent,
