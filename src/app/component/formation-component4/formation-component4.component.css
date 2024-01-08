@@ -71,10 +71,19 @@ h4 {
     font-size: 25px;
 
 }
-
+li{
+    text-decoration: none;
+    list-style: none;
+    padding: 25px;
+   
+}
+h1{
+    margin: 10px;
+}
 p {
     font-size: 1.1em;
-    padding: 4vw;
+    padding: 15px;
+    text-align: justify;
 }
   /****ORGANISATIONFORMATION******/
 
