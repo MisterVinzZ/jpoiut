@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: auto;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#general {
+    width: 100%;
+}
+/*********FOND**********/
+
+#fond {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/images/Ressources/fond2.jpg'); 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajustement pour les écrans plus petits */
+    background-position: center; /* Ajustement pour les écrans plus petits */
+    position: relative;
+    }
+
+#fond::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1B1950; 
+    opacity: 0.6;
+}
+  /*********FOND**********/
+
+  #container {
+    width: 90%;
+    height: 49vw;
+    margin: auto;
+    position: relative;
+    display: flex;
+    /* background-color: red; */
+    
+}
+
+#containerg {
+    width: 50%;
+    height: 100%;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    margin: 0;
+    text-decoration: underline;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
+}
+
+img {
+    width: 25vw;
+    height: 22vw;
+}
+
+#containertitreq {
+    width: 100%;
+    height: 5vw;
+    margin: 9vw 0 4vw 0;
+    text-align: center;
+    /* background-color: red; */
+}
+
+#containerquestion {
+    width: 100%;
+    height: 25vw;
+    margin: auto;
+    text-align: center;
+    /* background-color: rgb(179, 255, 0); */
+}
+
+#containerd {
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(0, 255, 170); */
+}
+
+#formulaire1{
+    background-color: white;
+    border-radius: 15px;
+    font-family: arial;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 85px 35px 85px 35px;
+    margin: 10vw auto;
+}
+
+    .champs{
+        border-radius: 5px;
+        border: solid 1px #6E6E6E;
+        margin-bottom: 35px;
+        padding: 25px ;
+    }
+
+
+#bouton{
+    background-color: #2E2A85;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#bouton:hover{
+    background-color: #1E1A75;
+    transition: 0.25s;
+}
+
+#formulaire2 {
+    display: none;
+}
+
+
+
+@media (max-width: 768px) {
+
+
+      #container {
+        width: 100%;
+        height: 170vw;
+        display: block;
+        margin: auto;
+    }
+    
+    #containerg {
+        width: 100%;
+        height: 30%;
+        align-items: center;
+    }
+    
+    h1 {
+        color: white;
+        font-size: 2.1em;
+        margin: auto;
+        padding-top: 30vw;
+    }
+    
+    
+    #containertxt {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: auto;
+    }
+    
+    #containerimg {
+        display: none;
+    }
+    
+    #containerd {
+        width: 100%;
+        height: 70%;
+        padding: 10vw;
+    }
+
+    #formulaire1 {
+        display: none;
+    }
+
+    #formulaire2{
+        background-color: white;
+        border-radius: 15px;
+        font-family: arial;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        padding: 60px 30px 60px 30px;
+        margin: auto;
+    }
+    
+    .champs2{
+        border-radius: 5px;
+        border: solid 1px #6E6E6E;
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+    
+    #bouton2{
+        background-color: #2E2A85;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        width: 150px;
+        margin: auto;
+
+    }
+    
+    #bouton2:hover{
+        background-color: #1E1A75;
+        transition: 0.25s;
+    }
+
+}

@@ -35,14 +35,15 @@ h3 {
     /* background-color: red; */
   }
   
-   .unite{
-    background-color: #F9F9F9;
+.unite{
     box-shadow: 1px 2px 5px 0px #838383;
-    width: 40%;
+    width: 35%;
     border-radius: 10px;
-    padding: 15px;
-    margin: 15px;
-  }
+    padding: 55px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    margin-bottom: 50px;
+}
   
   #unit1{
     background-color: rgb(105, 105, 247);
