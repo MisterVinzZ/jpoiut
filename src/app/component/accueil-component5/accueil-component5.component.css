@@ -7,6 +7,10 @@
     transition: transform 0.2s ease-in-out;
     text-align: justify;
 }
+.unite a{
+    text-decoration: none;
+    color: black;
+}
 
 .unite:hover{
     transform: scale(1.05);
