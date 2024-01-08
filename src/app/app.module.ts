@@ -125,9 +125,10 @@ ProjetRessources1Component,
     FormationComponent6Component,
     FormationComponent7Component,
     ComponentQuizzComponent,
+
+    SeparationContactComponent,
+
     SeparationContactComponent
-
-
 
     
 
