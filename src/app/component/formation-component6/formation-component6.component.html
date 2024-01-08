@@ -5,36 +5,32 @@
     <!-- <i id="left" class="fa-solid fa-angle-left"></i> -->
     <img src="/assets/images/fg.png" id="left" class="backbtn">
     <ul class="carousel">
-      <li class="card">
-        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
-              <section class="separateur"></section>
-        <span>Description JPO</span>
-      </li>
-      <li class="card">
-        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
-              <section class="separateur"></section>
-        <span>Description BUT 1</span>
-      </li>
-      <li class="card">
-        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
-              <section class="separateur"></section>
-        <span>Description BUT 2</span>
-      </li>
-      <li class="card">
-        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
-              <section class="separateur"></section>
-        <span>Description BUT 3</span>
-      </li>
-      <li class="card">
-        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
-              <section class="separateur"></section>
-        <span>Description MMI</span>
-      </li>
-      <li class="card">
-        <section class="img"><img src="/assets/images/imagepdf.png" alt="img" draggable="false"></section>
-              <section class="separateur"></section>
-        <span>Description JPO 2</span>
-      </li>
+      <li class="card" (click)="redirectToExternalPage()">
+        <section class="img"><img src="/assets/images/pub.png" alt="img" draggable="false"></section>
+        <section class="separateur"></section>
+        <span>Projet PUB</span>
+    </li>
+    <li class="card" (click)="redirectToExternalPage2()">
+      <section class="img"><img src="/assets/images/bras.png" alt="img" draggable="false"></section>
+      <section class="separateur"></section>
+      <span>Projet Bras Articulé</span>
+  </li>
+  <li class="card" (click)="redirectToExternalPage3()">
+    <section class="img"><img src="/assets/images/3d.png" alt="img" draggable="false"></section>
+    <section class="separateur"></section>
+    <span>Projet TABLE 3D</span>
+</li>
+<li class="card" (click)="redirectToExternalPage4()">
+  <section class="img"><img src="/assets/images/pdf.PNG" alt="img" draggable="false"></section>
+  <section class="separateur"></section>
+  <span>Projet PDF intéractif</span>
+</li>
+<li class="card" (click)="redirectToExternalPage5()">
+  <section class="img"><img src="/assets/images/open.png" alt="img" draggable="false"></section>
+  <section class="separateur"></section>
+  <span>Projet OPEN CONSEIL IT </span>
+</li>
+    
     </ul>
     <!-- <i id="right" class="fa-solid fa-angle-right"></i> -->
     <img src="/assets/images/fd.png" id="right" class="backbtn">
