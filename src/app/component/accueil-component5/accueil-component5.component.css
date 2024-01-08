@@ -6,6 +6,10 @@
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
 }
+.unite a{
+    text-decoration: none;
+    color: black;
+}
 
 .unite:hover{
     transform: scale(1.05);
