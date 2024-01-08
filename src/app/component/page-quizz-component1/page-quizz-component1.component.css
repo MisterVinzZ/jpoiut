@@ -58,6 +58,12 @@ h1 {
     color: white;
     font-size: 5rem;
     margin: 0;
+    text-decoration: underline;
+}
+
+h2 {
+    color: white;
+    font-size: 2em;
 }
 
 img {
@@ -65,7 +71,7 @@ img {
     height: 22vw;
 }
 
-#containertxt {
+#containertitreq {
     width: 100%;
     height: 5vw;
     margin: 9vw 0 4vw 0;
@@ -73,7 +79,7 @@ img {
     /* background-color: red; */
 }
 
-#containerimg {
+#containerquestion {
     width: 100%;
     height: 25vw;
     margin: auto;

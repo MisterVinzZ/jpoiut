@@ -62,6 +62,7 @@ import { FormationComponent6Component } from './component/formation-component6/f
 import { FormationComponent7Component } from './component/formation-component7/formation-component7.component';
 import { ComponentQuizzComponent } from './component/component-quizz/component-quizz.component';
 import { SeparationContactComponent } from './component/separation-contact/separation-contact.component';
+import { PageQuizzComponent1Component } from './component/page-quizz-component1/page-quizz-component1.component';
 
 
 @NgModule({
@@ -127,6 +128,7 @@ ProjetRessources1Component,
     ComponentQuizzComponent,
 
     SeparationContactComponent,
+    PageQuizzComponent1Component,
 
     SeparationContactComponent
 
