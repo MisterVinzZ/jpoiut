@@ -13,6 +13,8 @@
 
 #containertxt {
     width: 70%;
+    height: 100%;
+
     /* background-color: red; */
 }
 
@@ -24,6 +26,8 @@
 
 .txt {
     color: white;
+    text-align: justify;
+    padding-top: 45px;
 }
 
 #img1 {
