@@ -13,7 +13,7 @@ a{
 }
 
 #adresse{
-    margin-right: 50px;
+    margin-right: 100px;
 }
 
 h3{
@@ -26,6 +26,9 @@ p{
     font-weight: 100;
 }
 
+h1{
+    padding-bottom: 30px;
+}
 @media screen and (max-width: 800px) {
     #info {
       display: none;

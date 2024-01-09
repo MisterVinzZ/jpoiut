@@ -9,13 +9,15 @@ body{
 #placement{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: 30px;
+    padding-top: 40px;
+
 }
 
 #remontada{
-    margin-top: -170px;
+    margin-top: -330px;
 }
 
 #espace{

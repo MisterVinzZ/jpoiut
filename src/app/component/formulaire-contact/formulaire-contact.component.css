@@ -4,8 +4,8 @@ form{
     font-family: arial;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    padding: 30px;
+    width: 460px;
+    padding: 40px;
     margin-top: -200px;
 }
 
@@ -13,7 +13,8 @@ form{
     border-radius: 5px;
     border: solid 1px #6E6E6E;
     margin-bottom: 15px;
-    padding: 10px;
+    padding: 20px;
+
 }
 
 #mess{
@@ -22,7 +23,7 @@ form{
     border: solid 1px #6E6E6E;
     margin-bottom: 20px;
     padding: 10px;
-    height: 100px;
+    height: 130px;
 }
 
 #bouton{
@@ -31,7 +32,7 @@ form{
     padding: 10px;
     border: none;
     border-radius: 5px;
-    width: 100px;
+    width: 200px;
     cursor: pointer;
     transition: 0.25s;
 }
