@@ -65,6 +65,8 @@ import { SeparationContactComponent } from './component/separation-contact/separ
 import { PageQuizzComponent1Component } from './component/page-quizz-component1/page-quizz-component1.component';
 
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -140,6 +142,8 @@ ProjetRessources1Component,
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
+    RouterModule,
     AppRoutingModule
   ],
   providers: [],
