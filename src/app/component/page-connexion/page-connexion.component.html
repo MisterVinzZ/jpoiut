@@ -9,13 +9,12 @@
 
                     <section id="formulaireConnexion">
                         <h2>Se connecter à Meaux'vit</h2>
-                        <form method="POST" action="traitement_connexion.php">
-                                <input type="text" placeholder="Login" name="login" id="login">
-                                <input type="password" placeholder="Mot de passe" name="passwd" id="passwd">
-
-                                <input type="submit" value="Se connecter">   
-                                <a  href="#">Mot de passe oublié ?</a>
-                        </form>
+                        <form (ngSubmit)="onSubmit()" #connexionForm="ngForm">
+                            <input type="text" placeholder="Login" name="login" id="login" [(ngModel)]="credentials.mail">
+                            <input type="password" placeholder="Mot de passe" name="passwd" id="passwd" [(ngModel)]="credentials.password">
+                            <input type="submit" value="Se connecter">
+                            <a href="#">Mot de passe oublié ?</a>
+                          </form>
                     </section>
         </div>
     </div>
