@@ -27,7 +27,7 @@
 .txt {
     color: white;
     text-align: justify;
-    padding-top: 45px;
+    padding-top: 35px;
 }
 
 #img1 {
@@ -43,11 +43,18 @@ h3 {
     margin: 2vw 2vw 3vw 2vw;
     color: #2F2A85;
 }
+
 p {
     font-size: 1.1em;
     margin: 2vw;
 }
-
+.rectangle {
+    position: absolute;
+    width: 200px;
+    height: 12px;
+    background-color: #fff;
+    margin-left: 300px; margin-bottom: 20px; 
+  }
   /****APRESFORMATION******/
 
   @media (max-width: 768px) {
