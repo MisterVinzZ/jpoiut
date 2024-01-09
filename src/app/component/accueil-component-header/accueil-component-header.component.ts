@@ -27,6 +27,11 @@ import { Component, OnInit } from '@angular/core';
 styles: []
 })
 export class AccueilComponentHeaderComponent implements OnInit{
+
+
+
+
+  
   private lastDate: number = new Date("Janvier 11, 2024 00:00:00").getTime();
   public days: number = 0;
   public hours: number = 0;

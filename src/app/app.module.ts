@@ -64,6 +64,8 @@ import { ComponentQuizzComponent } from './component/component-quizz/component-q
 import { SeparationContactComponent } from './component/separation-contact/separation-contact.component';
 import { PageQuizzComponent1Component } from './component/page-quizz-component1/page-quizz-component1.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -137,6 +139,7 @@ ProjetRessources1Component,
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
