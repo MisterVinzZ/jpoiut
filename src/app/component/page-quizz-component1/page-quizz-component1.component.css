@@ -7,6 +7,7 @@ body {
     margin: auto;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #general {
@@ -17,7 +18,7 @@ body {
 #fond {
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/images/Ressources/fond2.jpg'); 
+    background-image: url('/assets/images/Ressources/fond3.jpg'); 
     background-size: 100%;
     background-repeat: no-repeat;
     background-size: cover; /* Ajustement pour les écrans plus petits */
@@ -57,24 +58,19 @@ body {
 h1 {
     color: white;
     font-size: 5rem;
-    margin: 0;
+    margin: 0 0 4vw 0;
     text-decoration: underline;
 }
 
 h2 {
     color: white;
-    font-size: 2em;
-}
-
-img {
-    width: 25vw;
-    height: 22vw;
+    font-size: 2.1em;
 }
 
 #containertitreq {
     width: 100%;
     height: 5vw;
-    margin: 9vw 0 4vw 0;
+    margin: 15vw 0 4vw 0;
     text-align: center;
     /* background-color: red; */
 }
@@ -99,17 +95,17 @@ img {
     font-family: arial;
     display: flex;
     flex-direction: column;
-    width: 65%;
-    padding: 85px 35px 85px 35px;
+    width: 80%;
+    padding: 65px 25px 65px 25px;
     margin: 10vw auto;
 }
 
-    .champs{
-        border-radius: 5px;
-        border: solid 1px #6E6E6E;
-        margin-bottom: 35px;
-        padding: 25px ;
-    }
+.champs{
+    border-radius: 5px;
+    border: solid 1px #6E6E6E;
+    margin-bottom: 35px;
+    padding: 25px ;
+}
 
 
 #bouton{
@@ -121,6 +117,8 @@ img {
     width: 150px;
     cursor: pointer;
     transition: 0.25s;
+    margin-left: 45px;
+    margin-top: 20px;
 }
 
 #bouton:hover{
@@ -132,7 +130,35 @@ img {
     display: none;
 }
 
+.containerr {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 90%;
+    border: 2px solid #222;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: left;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.3em;
+}
 
+.btn:hover {
+    background: #1E1A75;
+    color: white;
+
+}
+
+p {
+    margin: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
 
 @media (max-width: 768px) {
 
@@ -146,58 +172,67 @@ img {
     
     #containerg {
         width: 100%;
-        height: 30%;
-        align-items: center;
+        height: 40%;
+        align-items: center;    
+        text-align: center;
+        padding-top: 30vw;
     }
     
     h1 {
         color: white;
         font-size: 2.1em;
-        margin: auto;
-        padding-top: 30vw;
+        margin-bottom: 5vw;
+        padding-top: 5vw;
     }
     
+    h2 {
+        font-size: 1.7em;
+        margin-top: 5vw;
+    }
     
-    #containertxt {
-        width: 100%;
+    #containertitreq {
+        width: 76%;
         height: 100%;
         text-align: center;
+        background-color: #2E2A85;
         margin: auto;
+        border-radius: 15px 15px 0px 0px;
     }
+
     
-    #containerimg {
-        display: none;
+    #containerquestion {
+        width: 100%;
+        height: 30%;
+        margin: 0;
+        text-align: center;
+        align-items: center;
     }
-    
+
     #containerd {
         width: 100%;
         height: 70%;
-        padding: 10vw;
+        padding: 0 10vw 10vw 10vw;
     }
 
-    #formulaire1 {
-        display: none;
-    }
-
-    #formulaire2{
+    #formulaire1{
         background-color: white;
-        border-radius: 15px;
+        border-radius: 0px 0px 15px 15px;
         font-family: arial;
         display: flex;
         flex-direction: column;
-        width: 300px;
-        padding: 60px 30px 60px 30px;
+        width: 95%;
+        padding: 40px 30px 60px 30px;
         margin: auto;
     }
     
-    .champs2{
+    .champs1{
         border-radius: 5px;
         border: solid 1px #6E6E6E;
         margin-bottom: 25px;
         padding: 20px;
     }
     
-    #bouton2{
+    #bouton1{
         background-color: #2E2A85;
         color: white;
         padding: 10px;
@@ -208,7 +243,7 @@ img {
 
     }
     
-    #bouton2:hover{
+    #bouton1:hover{
         background-color: #1E1A75;
         transition: 0.25s;
     }
