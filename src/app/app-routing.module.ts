@@ -12,8 +12,10 @@ import { PageQuizzComponent } from './component/page-quizz/page-quizz.component'
 import { PageQuizzResultatComponent } from './component/page-quizz-resultat/page-quizz-resultat.component';
 import { PageRessourcesComponent } from './component/page-ressources/page-ressources.component';
 import { PageVisiteComponent } from './component/page-visite/page-visite.component';
+import { PageAdminComponent } from './component/page-admin/page-admin.component';
 
 const routes: Routes = [
+  { path: 'administration', component: PageAdminComponent},
   { path: '', component: PageAcceuilComponent },
   { path: 'page-admin-edition', component: PageAdminEditionComponent },
   { path: 'page-admin-stats', component: PageAdminStatsComponent },

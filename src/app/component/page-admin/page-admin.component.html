@@ -1,0 +1,36 @@
+<body>
+<p>page-admin works!</p>
+<p>page-admin works!</p>
+<p>page-admin works!</p>
+<p>page-admin works!</p>
+
+<!-- <button (click)="showStatistics()">Statistiques</button>
+<button (click)="showConfiguration()">Configuration</button>
+<div *ngIf="displayStatistics">
+  <p>Contenu des statistiques...</p>
+    <form>
+        <label for="heure">Heure :</label>
+        
+        <button type="submit">Soumettre</button>
+    </form>
+  
+</div>
+
+<div *ngIf="displayConfiguration">
+  <p>Contenu de la configuration...</p>
+</div> -->
+<h2>Admin Page</h2>
+<button (click)="getUsers()">Get Users</button>
+
+<div *ngIf="usersData">
+  <h3>Users Information</h3>
+  <div *ngFor="let user of usersData.body">
+    <p>ID: {{ user.id_user }}</p>
+    <p>Name: {{ user.name }}</p>
+    <p>Firstname: {{ user.firstname }}</p>
+    <p>Email: {{ user.mail }}</p>
+  </div>
+  <p>Total Users: {{ usersData.userCount }}</p>
+</div>
+
+</body>
