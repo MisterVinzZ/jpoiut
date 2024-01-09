@@ -1,5 +1,5 @@
 import { Component, AfterViewInit, OnDestroy } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-formation-component6',
   templateUrl: './formation-component6.component.html',
@@ -18,6 +18,7 @@ export class FormationComponent6Component implements AfterViewInit, OnDestroy {
   private timeoutId: any;
 
   ngAfterViewInit(): void {
+    
     this.scrollinghorizontal = document.querySelector(".scrollinghorizontal")!;
     this.carousel = document.querySelector(".carousel")!;
     this.arrowBtns = document.querySelectorAll(".backbtn");
@@ -152,5 +153,22 @@ private infiniteScroll(): void {
         this.scrollinghorizontal.removeEventListener("mouseenter", () => clearTimeout(this.timeoutId));
         this.scrollinghorizontal.removeEventListener("mouseleave", () => this.autoPlay());
       }
+    }
+    constructor(private router: Router) { }
+
+    redirectToExternalPage() {
+        window.location.href = 'https://vincent.aldehuelo.fr/projets/ProjetPub.html';
+    }
+    redirectToExternalPage2() {
+      window.location.href = 'https://vincent.aldehuelo.fr/projets/ProjetBras.html';
+    }
+    redirectToExternalPage3() {
+      window.location.href = 'https://vincent.aldehuelo.fr/projets/ProjetModelisation.html';
+    }
+    redirectToExternalPage4() {
+      window.location.href = 'https://vincent.aldehuelo.fr/projets/ProjetPDF.html';
+    }
+    redirectToExternalPage5() {
+      window.location.href = 'https://vincent.aldehuelo.fr/projets/ProjetOpen.html';
     }
 }
