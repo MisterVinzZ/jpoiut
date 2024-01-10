@@ -32,7 +32,7 @@ export class AccueilComponentHeaderComponent implements OnInit{
 
 
   
-  private lastDate: number = new Date("Janvier 11, 2024 00:00:00").getTime();
+  private lastDate: number = new Date("Fevrier 3, 2024 00:00:00").getTime();
   public days: number = 0;
   public hours: number = 0;
   public minutes: number = 0;
