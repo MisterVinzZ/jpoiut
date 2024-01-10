@@ -10,28 +10,14 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./page-connexion.component.css']
 })
 export class PageConnexionComponent {
-  credentials = { mail: '', password: '' };
+  credentials = { mail: '', password: '' }; //objet qui stock les infos du formulaire
 
   constructor(private monApiService: MonApiService, private router: Router, private http: HttpClient) {}
 
-  onSubmit(): void {
-    // console.log('Formulaire soumis', this.credentials);
+  onSubmit(): void { //méthode appelé lorsque le formulaire est soumis
+
     this.envoyerdonne();
-    // this.monApiService.login(this.credentials).subscribe
-    // const (
-    //   (response) => {
-    //     if (response && response.status === 'error') {
-    //       console.log('Erreur de connexion', response.message);
-    //     } else {
-    //       console.log('Connexion réussie', response);
-    //       // Effectuez la redirection ici
-    //       this.router.navigate(['/page-accueil']);
-    //     }
-    //   },
-    //   (error: HttpErrorResponse) => {
-    //     console.error('Erreur de connexion', error);
-    //   }
-    // );
+
   }
   public async envoyerdonne() {
     const donne = new FormData();
@@ -53,4 +39,19 @@ export class PageConnexionComponent {
   }
   }
 
-
+    // console.log('Formulaire soumis', this.credentials);
+    // this.monApiService.login(this.credentials).subscribe
+    // const (
+    //   (response) => {
+    //     if (response && response.status === 'error') {
+    //       console.log('Erreur de connexion', response.message);
+    //     } else {
+    //       console.log('Connexion réussie', response);
+    //       // Effectuez la redirection ici
+    //       this.router.navigate(['/page-accueil']);
+    //     }
+    //   },
+    //   (error: HttpErrorResponse) => {
+    //     console.error('Erreur de connexion', error);
+    //   }
+    // );
