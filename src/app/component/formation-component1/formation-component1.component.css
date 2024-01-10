@@ -28,7 +28,7 @@ h1 {
     color: white;
     font-size: 3.5em;
     text-align: center;
-    
+    font-family: 'TT Norms Pro', sans-serif;
 }
 
 h2 {
@@ -36,6 +36,7 @@ h2 {
     font-size: 1.25em;
     text-align: center;
     margin-top: 0.4vw;
+    font-family: 'TT Norms Pro', sans-serif;
 }
 #container {
     width: 60%;

@@ -14,5 +14,9 @@ export class MonApiService {
 
   login(credentials: any): Observable<any> { //permet de faire une requête HTTP POST vers l'endpoint /login de votre API avec les informations d'authentification
     return this.http.post(`${this.apiUrl}/Admin/traitement_connexion.php`, credentials, { headers: { 'Content-Type': 'application/json' } });
-  }
+
+}
+checkAdminSession(): Observable<any> {
+  return this.http.get<any>(`${this.apiUrl}/Admin/check_admin_session.php`);
+}
 }

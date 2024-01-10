@@ -11,6 +11,8 @@ import { PageQuestionnaireComponent } from './component/page-questionnaire/page-
 import { PageQuizzComponent } from './component/page-quizz/page-quizz.component';
 import { PageQuizzResultatComponent } from './component/page-quizz-resultat/page-quizz-resultat.component';
 import { PageRessourcesComponent } from './component/page-ressources/page-ressources.component';
+import { PageRessources2Component } from './component/page-ressources2/page-ressources2.component';
+import { PageRessources3Component } from './component/page-ressources3/page-ressources3.component';
 import { PageVisiteComponent } from './component/page-visite/page-visite.component';
 import { PageAdminComponent } from './component/page-admin/page-admin.component';
 
@@ -28,6 +30,8 @@ const routes: Routes = [
   { path: 'page-quizz', component: PageQuizzComponent },
   { path: 'page-quizz-resultat', component: PageQuizzResultatComponent },
   { path: 'page-ressources', component: PageRessourcesComponent },
+  { path: 'page-ressources2', component: PageRessources2Component },
+  { path: 'page-ressources3', component: PageRessources3Component },
   { path: 'page-visite', component: PageVisiteComponent },
 ];
 

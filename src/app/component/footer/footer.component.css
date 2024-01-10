@@ -26,6 +26,9 @@ width: 350px;
   margin-top: 60px;
   text-align: center;
 }
+#footC a{
+  text-decoration: underline;
+}
 
 .lienfoot{
 color: white;

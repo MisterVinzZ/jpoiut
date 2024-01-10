@@ -1,59 +1,59 @@
 table{
-border-bottom: #2F2A85 10px solid;
-margin-bottom: 100px;
-margin-left: 15%;
-width: 20%;
-}
-
-.STitre{
-    font-family: Acumin Pro, Arial;
-    font-weight: bold;
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    margin-bottom: -5px;
-    margin-left: -40%;
-}
-
-.projets{
-    width: 350px;
-    height: 200px;
-    background-color: #2F2A85;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    border-radius: 10px;
-    font-family: TT Norms, arial;
-    font-size: xx-large;
-    box-shadow: 5px 5px 5px 0px #838383;
-}
-
-#projet{
-    display: flex;
-    justify-content: space-around;
-    margin-top: -40px;
-    margin-bottom: 30px;
-}
-
-@media screen and (max-width: 800px) {
-    table {
-        display: none;
+    border-bottom: #2F2A85 10px solid;
+    margin-bottom: 100px;
+    margin-left: 15%;
+    width: 20%;
     }
-
+    
     .STitre{
-        display: none;
+        font-family: Acumin Pro, Arial;
+        font-weight: bold;
+        font-size: 32px;
+        color: rgb(0, 0, 0);
+        margin-bottom: -5px;
+        margin-left: -40%;
     }
-
+    
+    .projets{
+        width: 350px;
+        height: 200px;
+        background-color: #2F2A85;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 10px;
+        font-family: TT Norms, arial;
+        font-size: xx-large;
+        box-shadow: 5px 5px 5px 0px #838383;
+    }
+    
     #projet{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-around;
+        margin-top: -40px;
         margin-bottom: 30px;
     }
-
-    .projets{
-    margin-bottom: 50px;
-    width: 500px;
-    height: 300px;
-    }
-  }
+    
+    @media screen and (max-width: 800px) {
+        table {
+            display: none;
+        }
+    
+        .STitre{
+            display: none;
+        }
+    
+        #projet{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    
+        .projets{
+        margin-bottom: 50px;
+        width: 500px;
+        height: 300px;
+        }
+      }
