@@ -69,6 +69,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 324e6f657a0890d08360ccc63a9b4f2c9feb9f88
 
 
 @NgModule({
