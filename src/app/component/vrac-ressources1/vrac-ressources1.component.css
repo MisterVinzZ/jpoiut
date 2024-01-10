@@ -1,17 +1,18 @@
 table{
 border-bottom: #2F2A85 10px solid;
-margin-bottom: 100px;
+margin-bottom: 90px;
 margin-left: 15%;
-width: 20%;
+width: 22%;
 }
 
 .STitre{
     font-family: Acumin Pro, Arial;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 32px;
     color: rgb(0, 0, 0);
     margin-bottom: -5px;
     margin-left: -40%;
+    margin-top: 30px;
 }
 
 #vrac{
