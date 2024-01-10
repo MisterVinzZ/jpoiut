@@ -43,6 +43,7 @@
     padding: 2vw 0 0.5vw 3vw;
     color: black;
     position: relative;
+    font-family: 'TT Norms Pro', sans-serif;
 }
 
 .titrenoire:after {
@@ -79,6 +80,7 @@ li{
 }
 h1{
     margin: 10px;
+    font-family: 'TT Norms Pro', sans-serif;
 }
 p {
     font-size: 1.1em;

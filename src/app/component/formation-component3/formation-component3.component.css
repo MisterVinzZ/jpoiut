@@ -2,6 +2,7 @@
  #apresformation {
     width: 100%;
     background-color: #2F2A85;
+    padding-bottom: 50px;
 }
 
 #container2 {
@@ -12,16 +13,16 @@
 }
 
 #containertxt {
-    width: 70%;
+    width: 50%;
     height: 100%;
-
-    /* background-color: red; */
+    line-height: 125%;
 }
 
 .titre {
     color: white;
     padding: 2vw 0 0 12vw;
     margin: 0;
+    font-family: 'TT Norms Pro', sans-serif;
 }
 
 .txt {
@@ -31,8 +32,8 @@
 }
 
 #img1 {
-    width: 25vw;
-    height: 25vw;
+    width: 20vw;
+    height: 20vw;
     border-radius: 5%;
     margin: 2vw;
 
