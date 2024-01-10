@@ -12,11 +12,12 @@ export class MonApiService {
 
   constructor(private http: HttpClient) { }
 
-  login(credentials: any): Observable<any> { //permet de faire une requête HTTP POST vers l'endpoint /login de votre API avec les informations d'authentification
+  login(credentials: any): Observable<any> { 
     return this.http.post(`${this.apiUrl}/Admin/traitement_connexion.php`, credentials, { headers: { 'Content-Type': 'application/json' } });
+    //methode login qui prends les identifiants en parametres et envois une requete http post dans traitement connexion
 
 }
-checkAdminSession(): Observable<any> {
+checkAdminSession(): Observable<any> { //méthode vérifier la session
   return this.http.get<any>(`${this.apiUrl}/Admin/check_admin_session.php`);
 }
 }
