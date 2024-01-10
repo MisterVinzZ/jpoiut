@@ -7,11 +7,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ApiService {
-  private apiUrl = 'http://localhost/projects/SAE/jpo-api/api/';
+  private apiUrl = 'https://bilou.alwaysdata.net/API';
 
   constructor(private http: HttpClient) {}
 
-  postData(data: any): Observable<any> {
-    return this.http.post<any>(this.apiUrl, data);
+  getQuestions(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/Question/read.php`);
+  }
+
+  getAnswers(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/Answer/read.php`);
   }
 }

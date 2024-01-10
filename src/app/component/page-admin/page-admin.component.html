@@ -3,6 +3,7 @@
 <p>page-admin works!</p>
 <p>page-admin works!</p>
 <p>page-admin works!</p>
+<h2>Admin Page</h2>
 
 <!-- <button (click)="showStatistics()">Statistiques</button>
 <button (click)="showConfiguration()">Configuration</button>
@@ -17,12 +18,11 @@
 </div>
 
 <div *ngIf="displayConfiguration">
+  <button (click)="getUsers()">Get Users</button>
   <p>Contenu de la configuration...</p>
 </div> -->
-<h2>Admin Page</h2>
-<button (click)="getUsers()">Get Users</button>
 
-<div *ngIf="usersData">
+<!-- <div *ngIf="usersData">
   <h3>Users Information</h3>
   <div *ngFor="let user of usersData.body">
     <p>ID: {{ user.id_user }}</p>
@@ -31,6 +31,28 @@
     <p>Email: {{ user.mail }}</p>
   </div>
   <p>Total Users: {{ usersData.userCount }}</p>
+</div> -->
+<!-- page-admin.component.html -->
+<!-- page-admin.component.html -->
+<!-- page-admin.component.html -->
+<!-- page-admin.component.html -->
+<!-- page-admin.component.html -->
+<!-- page-admin.component.html -->
+<div *ngFor="let group of groupedAnswers">
+  <div>{{ group.question }}</div>
+  <div *ngFor="let answer of group.answers">
+    <div>{{ answer.answer }} de {{ answer.fk_user.name }} {{ answer.fk_user.firstname }}</div>
+  </div>
+  <hr>
 </div>
+
+
+
+
+
+
+
+
+
 
 </body>
