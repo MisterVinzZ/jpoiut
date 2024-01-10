@@ -13,6 +13,6 @@ export class MonApiService {
   constructor(private http: HttpClient) { }
 
   login(credentials: any): Observable<any> { //permet de faire une requête HTTP POST vers l'endpoint /login de votre API avec les informations d'authentification
-    return this.http.post(`${this.apiUrl}/traitement_connexion.php`, credentials);
+    return this.http.post(`${this.apiUrl}/traitement_connexion.php`, credentials, { headers: { 'Content-Type': 'application/json' } });
   }
 }
