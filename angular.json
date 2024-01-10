@@ -89,7 +89,10 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/Build/webgl.loader.js",
+              "src/assets/Build/webgl.framework.js"
+            ]
           }
         }
       }
