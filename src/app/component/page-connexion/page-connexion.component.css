@@ -5,6 +5,9 @@ body{
     padding: 0;
     font-size: 20px;
 }
+#error{
+    color: red;
+}
 
 .txtadm{
     margin-bottom: 20px;
