@@ -69,7 +69,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { PageAdminComponent } from './component/page-admin/page-admin.component';
 
 
 @NgModule({

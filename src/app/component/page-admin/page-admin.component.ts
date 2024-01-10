@@ -3,10 +3,6 @@ import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 import { Answer } from 'src/app/interface/answer';
 
-
-
-
-
 @Component({
   selector: 'app-page-admin',
   templateUrl: './page-admin.component.html',
@@ -54,5 +50,18 @@ export class PageAdminComponent implements OnInit {
     });
 
     return groupedAnswers;
+  }
+
+  displayStatistics = false;
+  displayConfiguration = true;
+
+  showStatistics() {
+    this.displayStatistics = true;
+    this.displayConfiguration = false;
+  }
+
+  showConfiguration() {
+    this.displayStatistics = false;
+    this.displayConfiguration = true;
   }
 }
