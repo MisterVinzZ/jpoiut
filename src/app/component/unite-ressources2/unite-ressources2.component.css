@@ -1,8 +1,9 @@
 .unite{
     box-shadow: 1px 2px 5px 0px #838383;
-    width: 45%;
+    width: 40%;
     border-radius: 10px;
-    padding: 15px;
+    padding: 25px;
+    padding-bottom: 100px;
 }
 
 .bottomunite{
@@ -47,22 +48,31 @@
 
 .txtunite{
     margin-left: 10px;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 32px;
 }
 
 .ressource{
-    margin-top: 40px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    font-family: 'TT Norms Pro', sans-serif;
 }
 
 #fin{
     display: flex;
-    justify-content: left;
     margin-left: 26px;
     margin-bottom: 60px;
 }
-
+p{
+    font-family: 'Acumin Pro', sans-serif;
+    line-height: 125%;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: justify;
+    padding-top: 25px;
+}
 @media screen and (max-width: 800px) {
     .ressource {
         margin-top: 0px;
