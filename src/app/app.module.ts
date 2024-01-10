@@ -67,7 +67,8 @@ import { PageQuizzComponent1Component } from './component/page-quizz-component1/
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
+import { PageAdminComponent } from './component/page-admin/page-admin.component';
 
 
 @NgModule({
@@ -81,6 +82,7 @@ import { RouterModule } from '@angular/router';
     PageVisiteComponent,
     PageRessourcesComponent,
     PageQuestionnaireComponent,
+    PageAdminComponent,
     PageAdminStatsComponent,
     PageAdminEditionComponent,
     PageFormationComponent,
@@ -145,6 +147,7 @@ ProjetRessources1Component,
     HttpClientModule,
     FormsModule,
     RouterModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
