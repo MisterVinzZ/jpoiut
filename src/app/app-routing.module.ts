@@ -18,7 +18,7 @@ import { PageAdminComponent } from './component/page-admin/page-admin.component'
 
 const routes: Routes = [
   { path: 'page-admin', component: PageAdminComponent},
-  { path: 'page-accueil', component: PageAcceuilComponent },
+  { path: '', component: PageAcceuilComponent },
   // { path: '', redirectTo: '/page-accueil', pathMatch: 'full' },
   { path: 'page-admin-edition', component: PageAdminEditionComponent },
   { path: 'page-admin-stats', component: PageAdminStatsComponent },
