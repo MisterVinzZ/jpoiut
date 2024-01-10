@@ -6,23 +6,32 @@
     flex-direction: row;
 }
 .container-2 .infos-left {
-    width: 60vw;
-    height: 100%;
-    color: rgb(0, 0, 0);
-    background-color: #EBEBEB;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 60vw;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  background-color: #EBEBEB;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 20px;
 }
 .container-2 .infos-left h2{
-    padding: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
     color: #000000;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-weight: bold;
+    font-size: 36px; 
 }
 .container-2 .infos-left p{
-    padding: 30px;
-    font-weight: 400;
-    color: #333;
-    text-align: justify;
+  padding: 30px;
+  font-weight: 400;
+  color: #333;
+  text-align: justify;
+  font-family: 'Acumin Pro', sans-serif;
+  line-height: 125%;
+  margin-bottom: 20px;
 }
 .container-2 .infos-left button {
     padding: 10px 20px;
@@ -55,6 +64,13 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.rectangle {
+  width: 325px;
+  height: 12px;
+  background-color: #2F2A85;
+  margin-left: 105px;
+  margin-bottom: 20px;
 }
 
 

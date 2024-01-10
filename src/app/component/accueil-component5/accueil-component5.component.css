@@ -34,7 +34,7 @@
 }
 
 #unit2{
-    background-color: rgb(247, 105, 114);
+    background-color: rgb(132 126 239);
 }
 
 #unit3{
@@ -58,6 +58,8 @@
 
 .txtunite{
     margin-left: 10px;
+    font-family: 'TT Norms Pro', sans-serif;
+    font-size: 32px;
 }
 
 .ressource{

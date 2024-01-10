@@ -17,6 +17,8 @@ header h1{
     font-size: 4.5vw;
     margin-left: 50px;
     margin: 20px;
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: bold;
 }
 header  h2{
     padding: 20px;
