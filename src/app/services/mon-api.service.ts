@@ -8,11 +8,11 @@ import { catchError } from 'rxjs/operators';
 })
 export class MonApiService {
 
-  private apiUrl = 'https://bilou.alwaysdata.net/API/Admin'; //'https://localhost/projects/SAE/jpo-api/connexion.php'
+  private apiUrl = 'https://bilou.alwaysdata.net/API'; //'https://localhost/projects/SAE/jpo-api/connexion.php'
 
   constructor(private http: HttpClient) { }
 
   login(credentials: any): Observable<any> { //permet de faire une requête HTTP POST vers l'endpoint /login de votre API avec les informations d'authentification
-    return this.http.post(`${this.apiUrl}/traitement_connexion.php`, credentials, { headers: { 'Content-Type': 'application/json' } });
+    return this.http.post(`${this.apiUrl}/Admin/traitement_connexion.php`, credentials, { headers: { 'Content-Type': 'application/json' } });
   }
 }

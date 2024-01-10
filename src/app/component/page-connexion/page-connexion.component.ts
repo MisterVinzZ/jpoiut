@@ -35,16 +35,22 @@ export class PageConnexionComponent {
   }
   public async envoyerdonne() {
     const donne = new FormData();
-    donne.append("mail", "testadmin@univ-eiffel.fr");
-    donne.append("passwd", "testadmin");
+    donne.append("mail", this.credentials.mail);
+    donne.append("passwd", this.credentials.password);
   
     try {
-      const response = await this.http.post("http://localhost/jpo/traitement_connexion.php", donne).toPromise();
+      const response = await this.http.post("https://bilou.alwaysdata.net/API/Admin/traitement_connexion.php", donne).toPromise();
       const data = response as any;
-      console.log(data);
+      if (data && data.status !== 'error') {
+        console.log('Connexion réussie', data);
+        this.router.navigate(['/page-admin']);
+      } else {
+        console.log('Erreur de connexion', data.message);
+      }
     } catch (error) {
       console.log('Erreur lors de la requête HTTP', error);
     }
   }
+  }
 
-}
+
