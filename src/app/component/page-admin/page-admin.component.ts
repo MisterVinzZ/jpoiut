@@ -2,6 +2,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
 import { Answer } from 'src/app/interface/answer';
+import { MonApiService } from '../../services/mon-api.service';
+import { Router } from '@angular/router';
 
 
 
@@ -16,12 +18,27 @@ import { Answer } from 'src/app/interface/answer';
 export class PageAdminComponent implements OnInit {
   groupedAnswers: any[] = [];
 
-  constructor(private apiService: ApiService) {}
+  constructor(private apiService: ApiService, private monApiService: MonApiService, private router: Router) {}
 
   ngOnInit(): void {
+    // this.checkAdminSession();
     this.loadGroupedAnswers();
   }
 
+  // checkAdminSession() {
+  //   this.monApiService.checkAdminSession().subscribe(
+  //     response => {
+  //       // Si la réponse est réussie, l'utilisateur est en session admin
+  //       console.log(response);
+  //     },
+  //     error => {
+  //       // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
+  //       console.error(error);
+  //       this.router.navigate(['/page-connexion']);
+  //     }
+  //   );
+  // }
+  
   loadGroupedAnswers() {
     this.apiService.getAnswers().subscribe(
       (data: any) => {
