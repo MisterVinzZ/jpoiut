@@ -16,28 +16,28 @@ import { Router } from '@angular/router';
 })
 
 export class PageAdminComponent implements OnInit {
-  groupedAnswers: any[] = [];
+  groupedAnswers: any[] = [];//stock les réponses groupées
 
+  //defferent services
   constructor(private apiService: ApiService, private monApiService: MonApiService, private router: Router) {}
 
   ngOnInit(): void {
-    // this.checkAdminSession();
+    this.checkAdminSession();
     this.loadGroupedAnswers();
   }
-
-  // checkAdminSession() {
-  //   this.monApiService.checkAdminSession().subscribe(
-  //     response => {
-  //       // Si la réponse est réussie, l'utilisateur est en session admin
-  //       console.log(response);
-  //     },
-  //     error => {
-  //       // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
-  //       console.error(error);
-  //       this.router.navigate(['/page-connexion']);
-  //     }
-  //   );
-  // }
+  checkAdminSession() {
+    this.monApiService.checkAdminSession().subscribe(
+      response => {
+        // Si la réponse est réussie, l'utilisateur est en session admin
+        console.log(response);
+      },
+      error => {
+        // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
+        console.error(error);
+        this.router.navigate(['/page-connexion']);
+      }
+    );
+  }
   
   loadGroupedAnswers() {
     this.apiService.getAnswers().subscribe(
@@ -73,3 +73,17 @@ export class PageAdminComponent implements OnInit {
     return groupedAnswers;
   }
 }
+// this.checkAdminSession();
+  // checkAdminSession() {
+  //   this.monApiService.checkAdminSession().subscribe(
+  //     response => {
+  //       // Si la réponse est réussie, l'utilisateur est en session admin
+  //       console.log(response);
+  //     },
+  //     error => {
+  //       // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
+  //       console.error(error);
+  //       this.router.navigate(['/page-connexion']);
+  //     }
+  //   );
+  // }

@@ -11,6 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PageConnexionComponent {
   credentials = { mail: '', password: '' }; //objet qui stock les infos du formulaire
+  errorMessage = '';
 
   constructor(private monApiService: MonApiService, private router: Router, private http: HttpClient) {}
 
@@ -20,18 +21,20 @@ export class PageConnexionComponent {
 
   }
   public async envoyerdonne() {
-    const donne = new FormData();
-    donne.append("mail", this.credentials.mail);
+    const donne = new FormData(); // Création d'un objet FormData avec les informations du formulaire
+    donne.append("mail", this.credentials.mail); //ajoute une paire clé-valeur à l'objet FormData
     donne.append("passwd", this.credentials.password);
   
     try {
+      //envoi de la requête post au serveur
       const response = await this.http.post("https://bilou.alwaysdata.net/API/Admin/traitement_connexion.php", donne).toPromise();
-      const data = response as any;
+      const data = response as any; //contourner verif type
       if (data && data.status !== 'error') {
         console.log('Connexion réussie', data);
         this.router.navigate(['/page-admin']);
       } else {
         console.log('Erreur de connexion', data.message);
+        this.errorMessage = data.message;
       }
     } catch (error) {
       console.log('Erreur lors de la requête HTTP', error);
