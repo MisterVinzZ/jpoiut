@@ -69,7 +69,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-
+import { AdminAuthGuard } from './admin-auth.guard';
 
 
 @NgModule({
@@ -152,7 +152,7 @@ ProjetRessources1Component,
     CommonModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [AdminAuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -16,8 +16,18 @@ export class PageConnexionComponent {
   constructor(private monApiService: MonApiService, private router: Router, private http: HttpClient) {}
 
   onSubmit(): void { //méthode appelé lorsque le formulaire est soumis
+    const isAdminSession = sessionStorage.getItem('adminSession') === 'true';
 
+    if (isAdminSession) {
+      
+      console.log('L\'utilisateur est en session admin'); // L'utilisateur est en session admin
+    } else {
+      
+      console.log('Redirection connexion');// Rediriger vers la page de connexion ou effectuer une autre action
+      
+    }
     this.envoyerdonne();
+    
 
   }
   public async envoyerdonne() {
@@ -29,8 +39,9 @@ export class PageConnexionComponent {
       //envoi de la requête post au serveur
       const response = await this.http.post("https://bilou.alwaysdata.net/API/Admin/traitement_connexion.php", donne).toPromise();
       const data = response as any; //contourner verif type
-      if (data && data.status !== 'error') {
+      if (data && data.status !== 'error') {  
         console.log('Connexion réussie', data);
+        sessionStorage.setItem('adminSession', 'true');
         this.router.navigate(['/page-admin']);
       } else {
         console.log('Erreur de connexion', data.message);

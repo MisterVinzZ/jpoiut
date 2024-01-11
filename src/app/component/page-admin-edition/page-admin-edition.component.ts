@@ -14,20 +14,20 @@ export class PageAdminEditionComponent implements OnInit {
 
   ngOnInit() {
     // Vérifier la session admin au chargement du composant
-    this.checkAdminSession();
+    // this.checkAdminSession();
   }
 
-  checkAdminSession() {
-    this.monApiService.checkAdminSession().subscribe(
-      response => {
-        // Si la réponse est réussie, l'utilisateur est en session admin
-        console.log(response);
-      },
-      error => {
-        // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
-        console.error(error);
-        this.router.navigate(['/page-connexion']);
-      }
-    );
-  }
+  // checkAdminSession() {
+  //   this.monApiService.checkAdminSession().subscribe(
+  //     response => {
+  //       // Si la réponse est réussie, l'utilisateur est en session admin
+  //       console.log(response);
+  //     },
+  //     error => {
+  //       // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
+  //       console.error(error);
+  //       this.router.navigate(['/page-connexion']);
+  //     }
+  //   );
+  // }
 }

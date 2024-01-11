@@ -15,10 +15,17 @@ import { PageRessources2Component } from './component/page-ressources2/page-ress
 import { PageRessources3Component } from './component/page-ressources3/page-ressources3.component';
 import { PageVisiteComponent } from './component/page-visite/page-visite.component';
 import { PageAdminComponent } from './component/page-admin/page-admin.component';
+import { AdminAuthGuard } from './admin-auth.guard';
+
 
 const routes: Routes = [
+
   { path: 'page-admin', component: PageAdminComponent},
   { path: '', component: PageAcceuilComponent },
+
+  { path: 'page-admin', component: PageAdminComponent, canActivate: [AdminAuthGuard]}, //verifier par AuthGuard
+  { path: 'page-accueil', component: PageAcceuilComponent },
+
   // { path: '', redirectTo: '/page-accueil', pathMatch: 'full' },
   { path: 'page-admin-edition', component: PageAdminEditionComponent },
   { path: 'page-admin-stats', component: PageAdminStatsComponent },
