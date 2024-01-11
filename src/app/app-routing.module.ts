@@ -19,13 +19,13 @@ import { AdminAuthGuard } from './admin-auth.guard';
 
 
 const routes: Routes = [
-<<<<<<< HEAD
+
   { path: 'page-admin', component: PageAdminComponent},
   { path: '', component: PageAcceuilComponent },
-=======
+
   { path: 'page-admin', component: PageAdminComponent, canActivate: [AdminAuthGuard]}, //verifier par AuthGuard
   { path: 'page-accueil', component: PageAcceuilComponent },
->>>>>>> 850aca7ce16ea70f37a0ce4836a31d53e96e3a34
+
   // { path: '', redirectTo: '/page-accueil', pathMatch: 'full' },
   { path: 'page-admin-edition', component: PageAdminEditionComponent },
   { path: 'page-admin-stats', component: PageAdminStatsComponent },
