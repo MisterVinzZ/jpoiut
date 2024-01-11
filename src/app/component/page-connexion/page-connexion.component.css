@@ -113,6 +113,9 @@ input[type="submit"]{
     background-color: rgb(47, 42, 133);
     color: white;
 }
+input[type="submit"]:hover{
+    cursor: pointer;
+}
 
 form > a{
     color: rgb(47, 42, 133);

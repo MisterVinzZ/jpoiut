@@ -29,13 +29,20 @@ button:hover{
     cursor: pointer;
 }
 #content{
-    background-color: rgb(232, 232, 232);
     margin: 0 5%;
-    padding: 2%;
-    border-radius: 10px 10px 0% 0% ;
 }
 
-#statistiquesJPO
+.participants{
+    padding: 20px;
+}
+
+#statistiquesJPO{
+    margin-top: 20px;
+
+    border-radius: 10px 10px 0% 0% ;
+    background-color: rgb(234, 234, 234);
+    padding: 3%;
+}
 
 .questionGroup{
     margin: 0 0% 2% 0%;
@@ -59,4 +66,8 @@ button:hover{
 }
 ul{
     list-style: none;
+}
+
+h1{
+    padding: 10px 0;
 }

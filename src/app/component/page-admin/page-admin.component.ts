@@ -4,6 +4,7 @@ import { ApiService } from 'src/app/services/api.service';
 import { Answer } from 'src/app/interface/answer';
 import { MonApiService } from '../../services/mon-api.service';
 import { Router } from '@angular/router';
+import { Users } from 'src/app/interface/users';
 
 @Component({
   selector: 'app-page-admin',
@@ -13,12 +14,15 @@ import { Router } from '@angular/router';
 
 export class PageAdminComponent implements OnInit {
   groupedAnswers: any[] = [];
+  users: { body: Users[]; itemCount: number } = { body: [], itemCount: 0 };
+
 
   constructor(private apiService: ApiService, private monApiService: MonApiService, private router: Router) {}
 
   ngOnInit(): void {
     // this.checkAdminSession();
     this.loadGroupedAnswers();
+    this.loadUsers();
   }
 
   // checkAdminSession() {
@@ -69,8 +73,21 @@ export class PageAdminComponent implements OnInit {
     return groupedAnswers;
   }
 
-  displayStatistics = false;
-  displayConfiguration = true;
+  loadUsers() {
+    this.apiService.getUsers().subscribe(
+      (data) => {
+        this.users = data;
+      },
+      (error) => {
+        console.log('Error fetching users:', error);
+      }
+    );
+  }
+
+  displayStatistics = true;
+  displayConfiguration = false;
+  displayStats = true;
+  displayList = false;
 
   showStatistics() {
     this.displayStatistics = true;
@@ -81,4 +98,14 @@ export class PageAdminComponent implements OnInit {
     this.displayStatistics = false;
     this.displayConfiguration = true;
   }
-}
+    showStats() {
+      this.displayStats = true;
+      this.displayList = false;
+    }
+
+    showList() {
+      this.displayList = true;
+      this.displayStats = false;
+    }
+  }
+
