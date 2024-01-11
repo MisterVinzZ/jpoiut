@@ -18,4 +18,8 @@ export class ApiService {
   getAnswers(): Observable<any> {
     return this.http.get<any>(`${this.apiUrl}/Answer/read.php`);
   }
+
+  getUsers(): Observable<any> {
+    return this.http.get<any>(`${this.apiUrl}/User/read.php`);
+  }
 }

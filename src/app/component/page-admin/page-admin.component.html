@@ -1,50 +1,50 @@
 <body>
-<p>page-admin works!</p>
-<p>page-admin works!</p>
-<p>page-admin works!</p>
-<p>page-admin works!</p>
-<h2>Admin Page</h2>
+<nav></nav>
+  <div id="content">
+    <h1>Espace administrateur</h1>
+<!--     <button (click)="showConfiguration()">Configuration</button>
+ -->    <button (click)="showStatistics()">Statistiques</button>
 
-<!-- <button (click)="showStatistics()">Statistiques</button>
-<button (click)="showConfiguration()">Configuration</button>
-<div *ngIf="displayStatistics">
-  <p>Contenu des statistiques...</p>
-    <form>
-        <label for="heure">Heure :</label>
+<!--     <div *ngIf="displayConfiguration">
+        <form>
+            <label for="heure">Heure :</label>
+            
+            <button type="submit">Soumettre</button>
+        </form>
+      
+    </div> -->
+    <div *ngIf="displayStatistics">
+      <div id="statistiquesJPO">
+        <section>
+          <button (click)="showStats()">Réponses au questionnaire</button>
+          <button (click)="showList()" >Voir la liste des participants</button>
+        </section>
+        <p  class="participants">Nombre de visiteurs: {{ users.itemCount }}</p>
+        <section *ngIf="displayList">
+          <h3>Liste des visiteurs</h3>
+          <div *ngFor="let user of users.body">
+            <p class="participants">Nom : {{ user.name }} | Prénom : {{ user.firstname }} | Email : {{ user.mail }}</p>
+            <hr>
+          </div>
+        </section>
+        <section *ngIf="displayStats">
+          <h3>Réponses au questionnaire</h3>
+          <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
+            <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
+            <ul>
+              <li *ngFor="let answer of group.answers">
+                <p><strong>{{ answer.answer }}</strong> de {{ answer.fk_user.name }} {{ answer.fk_user.firstname }} ({{ answer.fk_user.mail }})</p>
+              </li>
+            </ul>
+          </section>
+        </section>
         
-        <button type="submit">Soumettre</button>
-    </form>
-  
-</div>
-
-<div *ngIf="displayConfiguration">
-  <button (click)="getUsers()">Get Users</button>
-  <p>Contenu de la configuration...</p>
-</div> -->
-
-<!-- <div *ngIf="usersData">
-  <h3>Users Information</h3>
-  <div *ngFor="let user of usersData.body">
-    <p>ID: {{ user.id_user }}</p>
-    <p>Name: {{ user.name }}</p>
-    <p>Firstname: {{ user.firstname }}</p>
-    <p>Email: {{ user.mail }}</p>
+      </div>
+    </div> 
   </div>
-  <p>Total Users: {{ usersData.userCount }}</p>
-</div> -->
-<!-- page-admin.component.html -->
-<!-- page-admin.component.html -->
-<!-- page-admin.component.html -->
-<!-- page-admin.component.html -->
-<!-- page-admin.component.html -->
-<!-- page-admin.component.html -->
-<div *ngFor="let group of groupedAnswers">
-  <div>{{ group.question }}</div>
-  <div *ngFor="let answer of group.answers">
-    <div>{{ answer.answer }} de {{ answer.fk_user.name }} {{ answer.fk_user.firstname }}</div>
-  </div>
-  <hr>
-</div>
+  <app-footer></app-footer>
+
+
 
 
 

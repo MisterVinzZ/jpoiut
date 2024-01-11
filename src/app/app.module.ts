@@ -71,7 +71,6 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AdminAuthGuard } from './admin-auth.guard';
 
-
 @NgModule({
   declarations: [
     PageAdminComponent,
