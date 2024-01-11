@@ -44,9 +44,11 @@ p {
     p {
         font-size: 1.1em;
         margin: 3vw;
+        text-align: justify;
+        padding: 3vw;
     }
 
     #blanc {
-        height: 130vh;
+        height: 80vh;
     }
 }
