@@ -18,9 +18,7 @@ export class MonApiService {
     //methode login qui prends les identifiants en parametres et envois une requete http post dans traitement connexion
 
 }
-// checkAdminSession(): Observable<any> { //méthode vérifier la session
-//   return this.http.get<any>(`${this.apiUrl}/Admin/check_admin_session.php`);
-// }
+
  
  isAdminSession(): Observable<boolean> { //méthode pour vérifier la session admin
   const adminSession = sessionStorage.getItem('adminSession');
@@ -28,3 +26,8 @@ export class MonApiService {
 }
 
 }
+
+
+// checkAdminSession(): Observable<any> { //méthode vérifier la session
+//   return this.http.get<any>(`${this.apiUrl}/Admin/check_admin_session.php`);
+// }

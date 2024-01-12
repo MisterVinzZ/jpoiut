@@ -20,7 +20,9 @@ import { AdminAuthGuard } from './admin-auth.guard';
 
 const routes: Routes = [
 
-  { path: 'page-admin', component: PageAdminComponent},
+
+  // { path: 'page-admin', component: PageAdminComponent},
+
   { path: '', component: PageAcceuilComponent },
 
   { path: 'page-admin', component: PageAdminComponent, canActivate: [AdminAuthGuard]}, //verifier par AuthGuard
