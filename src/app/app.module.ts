@@ -70,6 +70,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { AdminAuthGuard } from './admin-auth.guard';
+import { PageProfilComponent } from './component/page-profil/page-profil.component';
+import { ProfilComponent1Component } from './component/profil-component1/profil-component1.component';
 
 @NgModule({
   declarations: [
@@ -138,7 +140,9 @@ ProjetRessources1Component,
     SeparationContactComponent,
     PageQuizzComponent1Component,
 
-    SeparationContactComponent
+    SeparationContactComponent,
+      PageProfilComponent,
+      ProfilComponent1Component
 
     
 

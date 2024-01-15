@@ -25,6 +25,10 @@ export class MonApiService {
   return of(adminSession === 'true');
 }
 
+logout(): void{ //méthode pour se déconnecter et supprimer la session
+  sessionStorage.removeItem('adminSession')
+}
+
 }
 
 
