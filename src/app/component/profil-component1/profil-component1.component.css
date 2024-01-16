@@ -1,6 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #2F2A85;
     margin: 0;
     display: flex;
     align-items: center;
@@ -16,7 +15,7 @@ body {
     text-align: center;
 }
 
-.logout-button {
+.logout-button, .link-button {
     background-color: #2F2A85;
     color: #fff;
     border: none;
@@ -24,12 +23,16 @@ body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 4px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
     margin-top: 10px;
+    border: 2px solid #ffffff;
 }
 
-.logout-button:hover {
-    background-color: #d13800;
+.logout-button:hover, .link-button:hover {
+    background-color: #ffffff;
+    color: #2F2A85;
+    border: 2px solid #2F2A85;
+    transform: scale(1.05);
 }
 
 h2 {
