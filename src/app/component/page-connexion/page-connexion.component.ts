@@ -12,11 +12,12 @@ import { HttpClient } from '@angular/common/http';
 export class PageConnexionComponent {
   credentials = { mail: '', password: '' }; //objet qui stock les infos du formulaire
   errorMessage = '';
-
+  isAdminSession: boolean = false;
   constructor(private monApiService: MonApiService, private router: Router, private http: HttpClient) {}
 
   onSubmit(): void { //méthode appelé lorsque le formulaire est soumis
     const isAdminSession = sessionStorage.getItem('adminSession') === 'true';
+    this.isAdminSession = isAdminSession;
 
     if (isAdminSession) {
       
@@ -52,20 +53,3 @@ export class PageConnexionComponent {
     }
   }
   }
-
-    // console.log('Formulaire soumis', this.credentials);
-    // this.monApiService.login(this.credentials).subscribe
-    // const (
-    //   (response) => {
-    //     if (response && response.status === 'error') {
-    //       console.log('Erreur de connexion', response.message);
-    //     } else {
-    //       console.log('Connexion réussie', response);
-    //       // Effectuez la redirection ici
-    //       this.router.navigate(['/page-accueil']);
-    //     }
-    //   },
-    //   (error: HttpErrorResponse) => {
-    //     console.error('Erreur de connexion', error);
-    //   }
-    // );

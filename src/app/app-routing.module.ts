@@ -16,12 +16,15 @@ import { PageRessources3Component } from './component/page-ressources3/page-ress
 import { PageVisiteComponent } from './component/page-visite/page-visite.component';
 import { PageAdminComponent } from './component/page-admin/page-admin.component';
 import { AdminAuthGuard } from './admin-auth.guard';
+import { PageProfilComponent } from './component/page-profil/page-profil.component';
 
 
 const routes: Routes = [
 
+
   // { path: 'page-admin', component: PageAdminComponent},
 
+  { path: 'page-profil', component: PageProfilComponent, canActivate: [AdminAuthGuard] },
   { path: '', component: PageAcceuilComponent },
 
   { path: 'page-admin', component: PageAdminComponent, canActivate: [AdminAuthGuard]}, //verifier par AuthGuard

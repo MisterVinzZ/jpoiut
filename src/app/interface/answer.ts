@@ -5,5 +5,6 @@ export interface Answer {
     fk_user: {
       name: string;
       firstname: string;
+      mail: string;
     };
   }
