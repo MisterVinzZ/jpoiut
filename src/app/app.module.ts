@@ -73,6 +73,8 @@ import { AdminAuthGuard } from './admin-auth.guard';
 import { PageProfilComponent } from './component/page-profil/page-profil.component';
 import { ProfilComponent1Component } from './component/profil-component1/profil-component1.component';
 
+
+
 @NgModule({
   declarations: [
     PageAdminComponent,
@@ -142,7 +144,8 @@ ProjetRessources1Component,
 
     SeparationContactComponent,
       PageProfilComponent,
-      ProfilComponent1Component
+      ProfilComponent1Component,
+      PageQuizzComponent1Component
 
     
 
