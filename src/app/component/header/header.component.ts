@@ -11,4 +11,7 @@ export class HeaderComponent{
   toggleMobileMenu() {
     this.isMobileMenuActive = !this.isMobileMenuActive;
   }
+  isAdminSession(): boolean {
+    return sessionStorage.getItem('adminSession') === 'true';
+  }
 }

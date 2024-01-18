@@ -13,7 +13,10 @@
                             <input type="text" placeholder="Mail" name="mail" id="login" [(ngModel)]="credentials.mail">
                             <input type="password" placeholder="Mot de passe" name="passwd" id="passwd" [(ngModel)]="credentials.password">
                             <input type="submit" value="Se connecter">
-                            <a>Mot de passe oublié ?</a>
+                            <a id="error" *ngIf="errorMessage; else passwordResetLink">{{ errorMessage }}</a>
+          <ng-template #passwordResetLink>
+            <a>Mot de passe oublié ?</a>
+          </ng-template>
                           </form>
                     </section>
         </div>

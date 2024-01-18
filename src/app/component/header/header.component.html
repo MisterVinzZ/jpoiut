@@ -1,14 +1,15 @@
-<nav class="navbar">
-    <a href="page-accueil"><img id="logo" src="../../../assets/images/logo.png" alt="logo_université_Gustave_Eiffel"></a>
+<!-- <nav class="navbar">
+    <a href=""><img id="logo" src="../../../assets/images/logo.png" alt="logo_université_Gustave_Eiffel"></a>
     <div class="nav-links" [class.mobile-menu]="isMobileMenuActive">
         <ul>
-            <!-- <li class="active"><a href="#">Accueil</a></li> -->
+            <li class="active"><a href="#">Accueil</a></li>
             <li><a href="page-visite">Visite Virtuelle</a></li>
             <li><a href="page-formation">Formations</a></li>
             <li><a href="page-contact">Contact</a></li>
             <li id="calltoaction"><a href="page-jpo">Journée JPO</a></li>
+            <li *ngIf="isAdminSession()"><a href="page-profil"><img src="../../../assets/images/profil.png" alt="Logo du profil" id="logo_profil"></a></li>
         </ul>
     </div>
     <img src="../../../assets/images/image 18.png" alt="menu hamburger" class="menu-hamburger" (click)="toggleMobileMenu()">
-    <!-- ajoute la classe CSS mobile-menu à l'élément si isMobileMenuActive est évalué à true, et la supprime si false. -->
-</nav>
+   
+</nav> -->
