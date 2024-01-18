@@ -1,25 +1,27 @@
+<!-- page-admin.component.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Espace administrateur</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+</head>
+
 <body>
-<nav></nav>
+  <nav></nav>
   <div id="content">
     <h1>Espace administrateur</h1>
-<!--     <button (click)="showConfiguration()">Configuration</button>
- -->    <button (click)="showStatistics()">Statistiques</button>
+    <button (click)="showStatistics()">Statistiques</button>
 
-<!--     <div *ngIf="displayConfiguration">
-        <form>
-            <label for="heure">Heure :</label>
-            
-            <button type="submit">Soumettre</button>
-        </form>
-      
-    </div> -->
     <div *ngIf="displayStatistics">
       <div id="statistiquesJPO">
         <section>
           <button (click)="showStats()">Réponses au questionnaire</button>
-          <button (click)="showList()" >Voir la liste des participants</button>
+          <button (click)="showList()">Voir la liste des participants</button>
         </section>
-        <p  class="participants">Nombre de visiteurs: {{ users.itemCount }}</p>
+        <p class="participants">Nombre de visiteurs : {{ users.itemCount }}</p>
         <section *ngIf="displayList">
           <h3>Liste des visiteurs</h3>
           <div *ngFor="let user of users.body">
@@ -29,30 +31,51 @@
         </section>
         <section *ngIf="displayStats">
           <h3>Réponses au questionnaire</h3>
-          <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
-            <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
-            <ul>
-              <li *ngFor="let answer of group.answers">
-                <p><strong>{{ answer.answer }}</strong> de {{ answer.fk_user.name }} {{ answer.fk_user.firstname }} ({{ answer.fk_user.mail }})</p>
-              </li>
-            </ul>
-          </section>
+
+          <form (ngSubmit)="searchUser()" #searchForm="ngForm">
+            <label for="email">Adresse e-mail :</label>
+            <input type="email" id="email" name="email" [(ngModel)]="searchUserMail" required>
+            <button type="submit">Rechercher</button>
+          </form>
+
+
+
+          <div *ngIf="searchResults.length > 0">
+            <h3>Résultats de la recherche :</h3>
+
+            <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
+              <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
+              <ul *ngFor="let user of searchResults">
+                <li *ngFor="let answer of user.answers">
+                  <p><strong>{{ answer.answer }}</strong> - {{ answer.mail }}</p>
+                </li>
+              </ul>
+            </section>
+
+          </div>
+
+          
         </section>
-        
+
+        <!-- Section pour afficher les questions et les graphiques -->
+        <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
+          <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
+          <ul>
+            <li *ngFor="let answer of group.answers">
+              <p><strong>{{ answer.answer }}</strong> de {{ answer.mail }}</p>
+            </li>
+          </ul>
+        </section>
       </div>
-    </div> 
+    </div>
   </div>
   <app-footer></app-footer>
 
-
-
-
-
-
-
-
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+  <script>
+    // Placez votre code Chartist.js ici pour générer les graphiques
+    // Par exemple, utilisez une boucle pour créer plusieurs graphiques en fonction de la structure de groupedAnswers
+  </script>
 </body>
+
+</html>

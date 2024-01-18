@@ -15,30 +15,17 @@ import { Users } from 'src/app/interface/users';
 export class PageAdminComponent implements OnInit {
   groupedAnswers: any[] = [];
   users: { body: Users[]; itemCount: number } = { body: [], itemCount: 0 };
+  searchResults: any[] = [];
+  searchUserMail: string = '';
 
 
   constructor(private apiService: ApiService, private monApiService: MonApiService, private router: Router) {}
 
   ngOnInit(): void {
-    // this.checkAdminSession();
     this.loadGroupedAnswers();
     this.loadUsers();
   }
 
-  // checkAdminSession() {
-  //   this.monApiService.checkAdminSession().subscribe(
-  //     response => {
-  //       // Si la réponse est réussie, l'utilisateur est en session admin
-  //       console.log(response);
-  //     },
-  //     error => {
-  //       // Si la réponse est une erreur, rediriger vers la page de connexion ou effectuer une autre action
-  //       console.error(error);
-  //       this.router.navigate(['/page-connexion']);
-  //     }
-  //   );
-  // }
-  
   loadGroupedAnswers() {
     this.apiService.getAnswers().subscribe(
       (data: any) => {
@@ -98,14 +85,36 @@ export class PageAdminComponent implements OnInit {
     this.displayStatistics = false;
     this.displayConfiguration = true;
   }
-    showStats() {
-      this.displayStats = true;
-      this.displayList = false;
-    }
 
-    showList() {
-      this.displayList = true;
-      this.displayStats = false;
-    }
+  showStats() {
+    this.displayStats = true;
+    this.displayList = false;
   }
 
+  showList() {
+    this.displayList = true;
+    this.displayStats = false;
+  }
+
+// Ajoutez cette méthode pour gérer la soumission du formulaire de recherche
+searchUser() {
+  if (this.searchUserMail.trim() !== '') {
+    this.apiService.searchUserByEmail(this.searchUserMail).subscribe(
+      (data: any[]) => {
+        // Assurez-vous que les données sont non nulles et non vides
+        if (data && data.length > 0) {
+          this.searchResults = this.groupAnswersByQuestion(data);
+        } else {
+          console.error('Aucune réponse trouvée pour cet e-mail.');
+        }
+      },
+      (error) => {
+        console.log('Erreur lors de la récupération des résultats de recherche:', error);
+      }
+    );
+
+  }
+}
+
+
+}
