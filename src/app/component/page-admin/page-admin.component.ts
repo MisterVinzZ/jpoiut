@@ -96,23 +96,26 @@ export class PageAdminComponent implements OnInit {
     this.displayStats = false;
   }
 
-// Ajoutez cette méthode pour gérer la soumission du formulaire de recherche
-searchUser() {
-  if (this.searchUserMail.trim() !== '') {
-    this.apiService.searchUserByEmail(this.searchUserMail).subscribe(
-      (data: any[]) => {
-        // Assurez-vous que les données sont non nulles et non vides
-        if (data && data.length > 0) {
-          this.searchResults = this.groupAnswersByQuestion(data);
-        } else {
-          console.error('Aucune réponse trouvée pour cet e-mail.');
+  searchUser() {
+    if (this.searchUserMail.trim() !== '') {
+      this.apiService.searchUserByEmail(this.searchUserMail).subscribe(
+        (data: any[]) => {
+          if (data && data.length > 0) {
+            this.searchResults = this.groupAnswersByQuestion(data);
+          } else {
+            console.error('Aucune réponse trouvée pour cet e-mail.');
+          }
+        },
+        (error) => {
+          console.log('Erreur lors de la récupération des résultats de recherche:', error);
         }
-      },
-      (error) => {
-        console.log('Erreur lors de la récupération des résultats de recherche:', error);
-      }
-    );
-
+      );
+    }
   }
-}
+  resetSearch() {
+    this.searchResults = [];
+    this.searchUserMail = '';
+  }
+  
+  
 }

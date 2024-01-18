@@ -45,10 +45,17 @@ button:hover{
 }
 
 .questionGroup{
-    margin: 0 0% 2% 0%;
+    margin: 0.4%  0.4%  2% 0.4% ;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
+}
+.questionSearch{
+    margin: 0.4% 0% 2% 0%;
+    background-color:#2F2A85;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
 }
 .question{
     font-size: 25px;
@@ -70,4 +77,60 @@ ul{
 
 h1{
     padding: 10px 0;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 10px;
+}
+
+form > input {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    width: 30%;
+    font-size: large;
+    
+}
+label{
+    margin-right: 2%;
+}
+form > input::placeholder {
+    font-style: italic;
+    font-size: large;
+    
+}
+
+form > button {
+    padding: 1% 5%;
+    border-radius: 0  15px 15px 0;
+    border: 1px solid rgb(47, 42, 133);
+    background: white;
+    color: rgb(47, 42, 133);
+    transition: all 0.5s;
+
+}
+
+form > button:hover{
+    padding: 1% 5%;
+    border-radius: 0  15px 15px 0;
+    background-color: rgb(47, 42, 133);
+    color: white;
+}
+
+#reset{
+    color: #2F2A85;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: fit-content;
+    font-style: normal;
+    transition: all 0.1s;
+
+
+}
+#reset:hover{
+font-style: italic;
 }

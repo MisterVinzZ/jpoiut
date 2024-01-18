@@ -1,19 +1,7 @@
-<!-- page-admin.component.html -->
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Espace administrateur</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-</head>
-
 <body>
-  <nav></nav>
   <div id="content">
     <h1>Espace administrateur</h1>
-    <button (click)="showStatistics()">Statistiques</button>
+    <h2>Statistiques</h2>
 
     <div *ngIf="displayStatistics">
       <div id="statistiquesJPO">
@@ -22,6 +10,8 @@
           <button (click)="showList()">Voir la liste des participants</button>
         </section>
         <p class="participants">Nombre de visiteurs : {{ users.itemCount }}</p>
+
+
         <section *ngIf="displayList">
           <h3>Liste des visiteurs</h3>
           <div *ngFor="let user of users.body">
@@ -29,35 +19,37 @@
             <hr>
           </div>
         </section>
+
+
         <section *ngIf="displayStats">
           <h3>Réponses au questionnaire</h3>
 
           <form (ngSubmit)="searchUser()" #searchForm="ngForm">
-            <label for="email">Adresse e-mail :</label>
-            <input type="email" id="email" name="email" [(ngModel)]="searchUserMail" required>
-            <button type="submit">Rechercher</button>
+            <label for="email">Rechercher un visiteur</label>
+            <input type="email" id="email" name="email" [(ngModel)]="searchUserMail" placeholder="martin@gmail.com" required>
+            <button  type="submit">Rechercher</button>
+            <button id="reset"(click)="resetSearch()">Réinitialiser la recherche</button>
+
           </form>
 
 
 
-          <div *ngIf="searchResults.length > 0">
+          <section *ngIf="searchResults.length > 0">
             <h3>Résultats de la recherche :</h3>
 
-            <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
-              <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
-              <ul *ngFor="let user of searchResults">
-                <li *ngFor="let answer of user.answers">
-                  <p><strong>{{ answer.answer }}</strong> - {{ answer.mail }}</p>
-                </li>
-              </ul>
-            </section>
-
-          </div>
+            <ng-container *ngFor="let group of searchResults; let i = index">
+              <section class="questionSearch">
+                <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
+                <ul>
+                  <li *ngFor="let answer of group.answers">
+                    <p><strong>{{ answer.answer }}</strong> de {{ answer.mail }}</p>
+                  </li>
+                </ul>
+              </section>
+            </ng-container>
+          </section>
 
           
-        </section>
-
-        <!-- Section pour afficher les questions et les graphiques -->
         <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
           <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
           <ul>
@@ -66,6 +58,9 @@
             </li>
           </ul>
         </section>
+
+        </section>
+
       </div>
     </div>
   </div>
@@ -77,5 +72,3 @@
     // Par exemple, utilisez une boucle pour créer plusieurs graphiques en fonction de la structure de groupedAnswers
   </script>
 </body>
-
-</html>
