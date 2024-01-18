@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { UserServiceQuizService } from '../../services/user-service-quiz.service';
 import { QuestionServiceQuizService } from '../../services/question-service-quiz.service';
 import { ResponseServiceQuizService } from '../../services/response-service-quiz.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-quizz-component1',
@@ -25,7 +26,7 @@ export class PageQuizzComponent1Component {
   questions: any[] = [
     {
       id: 6,
-      question: 'Question 6',
+      question: "Quelle est votre filière d'études actuelle (par exemple, sciences, littérature, sciences sociales, etc.) ?",
       options: [
         { value: 'Sciences', label: 'Sciences' },
         { value: 'Littérature', label: 'Littérature' },
@@ -36,7 +37,7 @@ export class PageQuizzComponent1Component {
     },
     {
       id: 8,
-      question: 'Question 8',
+      question: 'Comment avez-vous entendu parler de notre Journée Porte Ouverte ?',
       options: [
         { value: 'Réseaux sociaux', label: 'Réseaux sociaux (Facebook, Twitter, etc.)' },
         { value: 'Site web de l\'école', label: 'Site web de l\'école' },
@@ -46,7 +47,7 @@ export class PageQuizzComponent1Component {
     },
     {
       id: 9,
-      question: 'Question 9',
+      question: "Quelles étaient vos attentes avant de participer à l'événement ?",
       options: [
         { value: 'Découvrir les filières de formation', label: 'Découvrir les filières de formation' },
         { value: 'Rencontrer des étudiants', label: 'Rencontrer des étudiants' },
@@ -56,7 +57,7 @@ export class PageQuizzComponent1Component {
     },
     {
       id: 11,
-      question: 'Question 11',
+      question: 'Quelle est votre branche favorite parmi les trois propositions ?',
       options: [
         { value: 'Développement web', label: 'Développement web' },
         { value: 'Audiovisuel', label: 'Audiovisuel' },
@@ -65,7 +66,7 @@ export class PageQuizzComponent1Component {
     },
     {
       id: 12,
-      question: 'Question 12',
+      question: 'Comment la formation MMI pourrait-elle correspondre à vos objectifs académiques et professionnels ?',
       options: [
         { value: 'Acquisition de compétences techniques', label: 'Acquisition de compétences techniques' },
         { value: 'Développement de la créativité', label: 'Développement de la créativité' },
@@ -75,7 +76,7 @@ export class PageQuizzComponent1Component {
     },
     {
       id: 13,
-      question: 'Question 13',
+      question: 'Comment évaluez-vous la convivialité du site web de la Journée Porte Ouverte et du quiz ?',
       options: [
         { value: 'Très convivial', label: 'Très convivial' },
         { value: 'Convivial', label: 'Convivial' },
@@ -86,7 +87,7 @@ export class PageQuizzComponent1Component {
     },
     {
       id: 14,
-      question: 'Question 14',
+      question: "Sur une échelle de 1 à 10, à quel point recommanderiez-vous cette journée à d'autres personnes ?",
       options: [
         { value: '1', label: '1 (Pas du tout)' },
         { value: '2', label: '2' },
@@ -106,7 +107,7 @@ export class PageQuizzComponent1Component {
       private httpClient: HttpClient, private elementRef: ElementRef,
       public userService: UserServiceQuizService,
       public questionService: QuestionServiceQuizService,
-      public responseService: ResponseServiceQuizService ) {}
+      public responseService: ResponseServiceQuizService , private router: Router ) {}
 
       ngOnInit(): void {
         this.questionService.getQuestions().subscribe(
@@ -263,6 +264,7 @@ getOptionsForQuestion(question: any): any[] {
         .subscribe(
           (data: any) => {
             console.log('Réponse du serveur:', data);
+            this.router.navigate(['/page-accueil']);
           },
           (error) => {
             console.error('Erreur lors de l\'envoi de la réponse du quiz:', error);
