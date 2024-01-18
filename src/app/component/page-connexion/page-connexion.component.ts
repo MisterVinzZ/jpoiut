@@ -43,7 +43,7 @@ export class PageConnexionComponent {
       if (data && data.status !== 'error') {  
         console.log('Connexion réussie', data);
         sessionStorage.setItem('adminSession', 'true');
-        this.router.navigate(['/page-admin']);
+        this.router.navigate(['/page-accueil']);
       } else {
         console.log('Erreur de connexion', data.message);
         this.errorMessage = data.message;

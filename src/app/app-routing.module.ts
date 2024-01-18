@@ -23,6 +23,7 @@ const routes: Routes = [
 
 
   // { path: 'page-admin', component: PageAdminComponent},
+
   { path: 'page-profil', component: PageProfilComponent, canActivate: [AdminAuthGuard] },
   { path: '', component: PageAcceuilComponent },
 
