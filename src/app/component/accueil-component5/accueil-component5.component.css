@@ -127,3 +127,36 @@ p{
             display: none;
         }
   }
+
+  @media screen and (max-width: 450px) {
+    .unite {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .txtunite {
+        font-size: 20px;
+    }
+
+    p {
+        padding: 5px;
+    }
+
+    .trait {
+        margin-left: 0;
+    }
+
+    .lien {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .lien img {
+        height: 15px;
+        width: 15px;
+        margin-top: 0;
+        margin-left: 5px;
+    }
+}

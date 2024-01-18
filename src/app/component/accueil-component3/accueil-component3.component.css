@@ -40,3 +40,24 @@
     }
   }
   
+  
+@media (max-width: 450px) {
+  .container-3 {
+      flex-direction: column;
+      height: auto;
+      align-items: stretch; /* Ajustez selon vos besoins */
+  }
+
+  .container-3 .one,
+  .container-3 .two,
+  .container-3 .three {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+  }
+
+  .container-3 p {
+      margin-top: 10px;
+  }
+}
