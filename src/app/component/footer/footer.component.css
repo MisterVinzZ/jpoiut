@@ -71,3 +71,39 @@ color: white;
   padding-bottom: 100px;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .reseaufoot{
+    padding: 0px 5px;
+  }
+
+  #footG{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  #footadr{
+    margin: 10px 0px;
+  }
+
+  #footD{
+    margin: 10px 0px;
+  }
+
+  #footC{
+    margin: 20px 0px;
+    position: relative;
+  }
+
+  footer{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border-top: none;
+  }
+}

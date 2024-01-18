@@ -82,6 +82,10 @@ body{
 }
 
 @media screen and (max-width:800px) {
+    #cache{
+        display: none;
+    }
+
     .navbar{
         padding: 0;
     }

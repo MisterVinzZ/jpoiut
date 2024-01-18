@@ -122,4 +122,8 @@ p{
     #fin{
         margin-left: 0px;
         }
+
+        #cache{
+            display: none;
+        }
   }
