@@ -1,30 +1,34 @@
+<section id="bluebar"><br></section>
+<section id="fond">
+<section class="centrage">
 <div id="user-info-form" *ngIf="!hasCreatedAccount">
-    <label for="name">Nom:</label>
-    <input type="text" id="name" placeholder="Entrez votre nom" [(ngModel)]="name">
+    <h1>Formulaire</h1>
+    <input class="champs" type="text" id="name" placeholder="Entrez votre nom" [(ngModel)]="name">
 
-    <label for="firstname">Prénom:</label>
-    <input type="text" id="firstname" placeholder="Entrez votre prénom" [(ngModel)]="firstname">
+    <input class="champs" type="text" id="firstname" placeholder="Entrez votre prénom" [(ngModel)]="firstname">
 
-    <label for="mail">E-mail:</label>
-    <input type="text" id="mail" placeholder="Entrez votre e-mail" [(ngModel)]="mail">
+    <input class="champs" type="text" id="mail" placeholder="Entrez votre e-mail" [(ngModel)]="mail">
 
-    <button (click)="submitUserData()">Envoyer</button>
+    <button id="bouton" (click)="submitUserData()">Envoyer</button>
     <!-- <button (click)="showQuiz()" [disabled]="!hasCreatedAccount" id="test-button" disabled>Passer au Quiz</button> -->
 </div>
+</section>
 
-
+<section class="centrage">
 <div id="quiz-container" class="quiz-container" *ngIf="hasCreatedAccount">
     <h1>Quiz</h1>
     <div id="question-container-quiz"></div>
     <form id="quizForm" (submit)="submitQuiz($event)">
       <div class="question-container" *ngFor="let question of questions">
         <p>{{ question.question }}</p>
-        <div *ngFor="let option of question.options">
+        <div id="espace" *ngFor="let option of question.options">
           <input type="radio" [value]="option.value" name="q{{ question.id }}">
-          <label>{{ option.label }}</label><br>
+          <label id="quest">{{ option.label }}</label><br>
         </div>
       </div>
       <br>
-      <input type="submit" value="Submit">
+      <input id="bouton" type="submit" value="Submit">
     </form>
   </div>
+</section>
+</section>

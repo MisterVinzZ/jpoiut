@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#bluebar{
+    background-color: #2E2A85;
+    padding: 2%;
+}
+
 body {
     margin: auto;
     padding: 0;
@@ -10,16 +16,74 @@ body {
     overflow-y: hidden;
 }
 
+.centrage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #general {
     width: 100%;
 }
 
-#user-info-form{
-    margin-top: 300px;
+#quest{
+    margin-left: 20px;
 }
+
+#espace{
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2E2A85;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  input[type="radio"]:hover {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #2E2A85;
+    border-radius: 0px;
+    transition: 0.5s;
+  }
+  
+  input[type="radio"]:checked {
+    background-color: #2E2A85;
+    border-radius: 100%;
+    transition: 0.5s;
+  }
+
+#user-info-form{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px;
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
 #quiz-container{
-    margin-top: 100px;
-    background-color: red;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 50px;
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 100px;
+    height: 600px;
+    overflow-y: scroll;
 }
 /*********FOND**********/
 
@@ -34,16 +98,6 @@ body {
     position: relative;
     }
 
-#fond::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #1B1950; 
-    opacity: 0.6;
-}
   /*********FOND**********/
 
   #container {
@@ -64,10 +118,9 @@ body {
 }
 
 h1 {
-    color: white;
-    font-size: 5rem;
-    margin: 0 0 4vw 0;
-    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 40px;
 }
 
 h2 {
@@ -125,7 +178,6 @@ h2 {
     width: 150px;
     cursor: pointer;
     transition: 0.25s;
-    margin-left: 45px;
     margin-top: 20px;
 }
 
