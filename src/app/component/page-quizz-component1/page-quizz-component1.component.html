@@ -1,35 +1,30 @@
-<body>
+<div id="user-info-form" *ngIf="!hasCreatedAccount">
+    <label for="name">Nom:</label>
+    <input type="text" id="name" placeholder="Entrez votre nom" [(ngModel)]="name">
 
-    <div id="user-info-form" *ngIf="!hasCreatedAccount">
-        <label for="name">Nom:</label>
-        <input type="text" id="name" placeholder="Entrez votre nom" [(ngModel)]="name">
+    <label for="firstname">Prénom:</label>
+    <input type="text" id="firstname" placeholder="Entrez votre prénom" [(ngModel)]="firstname">
 
-        <label for="firstname">Prénom:</label>
-        <input type="text" id="firstname" placeholder="Entrez votre prénom" [(ngModel)]="firstname">
+    <label for="mail">E-mail:</label>
+    <input type="text" id="mail" placeholder="Entrez votre e-mail" [(ngModel)]="mail">
 
-        <label for="mail">E-mail:</label>
-        <input type="text" id="mail" placeholder="Entrez votre e-mail" [(ngModel)]="userEmail">
-
-        <button (click)="submitUserData()">Envoyer</button>
-        <button (click)="showQuiz()" [disabled]="!hasCreatedAccount" id="test-button" disabled>Passer au Quiz</button>
-    </div>
+    <button (click)="submitUserData()">Envoyer</button>
+    <!-- <button (click)="showQuiz()" [disabled]="!hasCreatedAccount" id="test-button" disabled>Passer au Quiz</button> -->
+</div>
 
 
-    <div id="quiz-container" class="quiz-container" *ngIf="hasCreatedAccount">
-        <h1>Quiz</h1>
-
-        <div id="question-container-quiz"></div>
-        <form id="quizForm" (submit)="submitQuiz($event)">
-            <div class="question-container" *ngFor="let question of questionsFromParent | keyvalue">
-                <p>{{ question.value.question }}</p>
-                <!-- Ajoutez les options de réponse ici -->
-                <label *ngFor="let option of getOptionsForQuestion(question.value)">
-                    <input type="radio" [name]="'q' + question.key" [value]="option.value">
-                    {{ option.label }}
-                </label>
-            </div>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
-    </div>
-</body>
+<div id="quiz-container" class="quiz-container" *ngIf="hasCreatedAccount">
+    <h1>Quiz</h1>
+    <div id="question-container-quiz"></div>
+    <form id="quizForm" (submit)="submitQuiz($event)">
+      <div class="question-container" *ngFor="let question of questions">
+        <p>{{ question.question }}</p>
+        <div *ngFor="let option of question.options">
+          <input type="radio" [value]="option.value" name="q{{ question.id }}">
+          <label>{{ option.label }}</label><br>
+        </div>
+      </div>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>

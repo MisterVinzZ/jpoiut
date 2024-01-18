@@ -74,7 +74,6 @@ import { PageProfilComponent } from './component/page-profil/page-profil.compone
 import { ProfilComponent1Component } from './component/profil-component1/profil-component1.component';
 
 
-
 @NgModule({
   declarations: [
     PageAdminComponent,
