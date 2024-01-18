@@ -243,7 +243,7 @@ getOptionsForQuestion(question: any): any[] {
         };
 
         responses.push(response);
-        this.sendResponse(response);
+        // this.sendResponse(response);
         console.log(response);
     });
 
