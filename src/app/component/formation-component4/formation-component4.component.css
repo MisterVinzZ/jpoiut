@@ -10,6 +10,8 @@
     width: 93%;
     height: 12vw;
     display: flex;
+    align-items: center;
+    justify-content: center;
     border: solid 6px #2F2A85;
     border-radius: 15px;
     margin: auto;
@@ -38,7 +40,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
+
     /* background-color: yellow; */
 }
 
@@ -62,7 +64,7 @@
 .icons {
     width: 90px;
     height: 90px;
-    
+    margin-top: -10px;
 }
 
 h3 {
