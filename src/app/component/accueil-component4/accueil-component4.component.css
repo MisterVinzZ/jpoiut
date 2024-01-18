@@ -92,3 +92,40 @@
       margin-bottom: 20px;
     }
   }
+
+  @media (max-width: 450px) {
+    .container-4 {
+        flex-direction: column;
+        height: auto;
+        width: 95vw;
+    }
+
+    .container-4 .infos-left,
+    .container-4 .infos-right {
+        width: 100%;
+        padding: 10px; 
+    }
+
+    .container-4 .infos-right h2 {
+        font-size: 24px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .container-4 .infos-right p {
+        padding: 15px;
+        margin-bottom: 10px;
+    }
+
+    .container-4 .infos-right button {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    .rectangle {
+        width: 100%;
+        margin-left: 0;
+    }
+}
