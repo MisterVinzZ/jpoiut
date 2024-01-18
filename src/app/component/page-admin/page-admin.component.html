@@ -1,25 +1,17 @@
 <body>
-<nav></nav>
   <div id="content">
     <h1>Espace administrateur</h1>
-<!--     <button (click)="showConfiguration()">Configuration</button>
- -->    <button (click)="showStatistics()">Statistiques</button>
+    <h2>Statistiques</h2>
 
-<!--     <div *ngIf="displayConfiguration">
-        <form>
-            <label for="heure">Heure :</label>
-            
-            <button type="submit">Soumettre</button>
-        </form>
-      
-    </div> -->
     <div *ngIf="displayStatistics">
       <div id="statistiquesJPO">
         <section>
           <button (click)="showStats()">Réponses au questionnaire</button>
-          <button (click)="showList()" >Voir la liste des participants</button>
+          <button (click)="showList()">Voir la liste des participants</button>
         </section>
-        <p  class="participants">Nombre de visiteurs: {{ users.itemCount }}</p>
+        <p class="participants">Nombre de visiteurs : {{ users.itemCount }}</p>
+
+
         <section *ngIf="displayList">
           <h3>Liste des visiteurs</h3>
           <div *ngFor="let user of users.body">
@@ -27,32 +19,52 @@
             <hr>
           </div>
         </section>
+
+
         <section *ngIf="displayStats">
           <h3>Réponses au questionnaire</h3>
-          <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
-            <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
-            <ul>
-              <li *ngFor="let answer of group.answers">
-                <p><strong>{{ answer.answer }}</strong> de {{ answer.fk_user.name }} {{ answer.fk_user.firstname }} ({{ answer.fk_user.mail }})</p>
-              </li>
-            </ul>
+
+          <form (ngSubmit)="searchUser()" #searchForm="ngForm">
+            <label for="email">Rechercher un visiteur</label>
+            <input type="email" id="email" name="email" [(ngModel)]="searchUserMail" placeholder="martin@gmail.com" required>
+            <button  type="submit">Rechercher</button>
+            <button id="reset"(click)="resetSearch()">Réinitialiser la recherche</button>
+
+          </form>
+
+
+
+          <section *ngIf="searchResults.length > 0">
+            <h3>Résultats de la recherche :</h3>
+
+            <ng-container *ngFor="let group of searchResults; let i = index">
+              <section class="questionSearch">
+                <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
+                <ul>
+                  <li *ngFor="let answer of group.answers">
+                    <p><strong>{{ answer.answer }}</strong> de {{ answer.mail }}</p>
+                  </li>
+                </ul>
+              </section>
+            </ng-container>
           </section>
+
+          
+        <section class="questionGroup" *ngFor="let group of groupedAnswers; let i = index">
+          <p class="question">{{ 'Q' + (i + 1) + '. ' + group.question }}</p>
+          <ul>
+            <li *ngFor="let answer of group.answers">
+              <p><strong>{{ answer.answer }}</strong> de {{ answer.mail }}</p>
+            </li>
+          </ul>
         </section>
-        
+
+        </section>
+
       </div>
-    </div> 
+    </div>
   </div>
   <app-footer></app-footer>
-
-
-
-
-
-
-
-
-
-
-
-
+  <script>
+  </script>
 </body>

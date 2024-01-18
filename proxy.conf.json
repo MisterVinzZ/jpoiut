@@ -1,7 +1,8 @@
 {
-    "/API/*": {
+  "/API/*": {
       "target": "https://bilou.alwaysdata.net",
       "secure": false,
-      "changeOrigin": true
-    }
+      "changeOrigin": true,
+      "logLevel": "debug"
   }
+}

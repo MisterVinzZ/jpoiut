@@ -13,6 +13,14 @@ body {
 #general {
     width: 100%;
 }
+
+#user-info-form{
+    margin-top: 300px;
+}
+#quiz-container{
+    margin-top: 100px;
+    background-color: red;
+}
 /*********FOND**********/
 
 #fond {
@@ -21,8 +29,8 @@ body {
     background-image: url('/assets/images/Ressources/fond3.jpg'); 
     background-size: 100%;
     background-repeat: no-repeat;
-    background-size: cover; /* Ajustement pour les écrans plus petits */
-    background-position: center; /* Ajustement pour les écrans plus petits */
+    background-size: cover; 
+    background-position: center; 
     position: relative;
     }
 
